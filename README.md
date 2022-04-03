@@ -1,5 +1,6 @@
 # Django Starter with CustomUser and Docutils
 * A pre-built CustomUser Ddjango starter. Has pre-built CustomUser( and a basic app).
+* See [notes.md](notes.md) for my notes.
 
 
 ## Assumptions:
