@@ -1,6 +1,6 @@
 secrets.*
 .vscode
-class_otter.code-
+*code-workspace
 local_things*
 
 # Byte-compiled / optimized / DLL files
