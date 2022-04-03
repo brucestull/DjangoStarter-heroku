@@ -1,12 +1,14 @@
-# Django Starter with CustomUser
-* A pre-built CustomUser Ddjango starter. Has pre-built CustomUser( and a basic app).<br>
-* Using method from: [CustomUser - Will Vincent - LearnDjango](https://learndjango.com/tutorials/django-custom-user-model)
+# Django Starter with CustomUser and Docutils
+* A pre-built CustomUser Ddjango starter. Has pre-built CustomUser( and a basic app).
+
 
 ## Assumptions:
+* User has an IDE already set up and useable.
+* User has some version of Python installed.
 
-## Setup:
-1. Create pipenv
-1. Intall Django and Docutils:
-    * I'm using DJango 3.2 and docutils .
-    * `pipenv install dhango==3.2 docutils==???`
-1. AAAA - []()
+## Process:
+* [notes.md](notes.md)
+
+## Resources:
+* Method: [CustomUser - Will Vincent - LearnDjango](https://learndjango.com/tutorials/django-custom-user-model)
+* Docutils: [The Django admin documentation generator](https://docs.djangoproject.com/en/4.0/ref/contrib/admin/admindocs/)
