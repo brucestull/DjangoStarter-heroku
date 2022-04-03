@@ -1,7 +1,7 @@
 # Django Custom User Starter Notes
 
 ## NOTE:
-* I've used '.' in place of '/' in some directory paths below. It's a style decision. Please use '/' or '\' in place of '.' whenever needed in your filesystem interface.
+* I've used '.' in place of '/' in some directory paths below. It's a style decision. Please use '/' or '\\' in place of '.' whenever needed in your filesystem interface.
 
 ## Set up Django:
 
@@ -10,11 +10,12 @@
 
 1. Note virtual environment location and starting command:
     * Virtual Environment activation:
-        * Powershell: `C:\Users\Bruce\.virtualenvs\DjangoCustomUserStarter-_pwIjQD3\Scripts\activate.ps1`
-        * BASH: `source C:/Users/Bruce/.virtualenvs/DjangoCustomUserStarter-_pwIjQD3/Scripts/activate`
+        * Powershell: `C:\<path to virtual environment>\Scripts\activate.ps1`
+        * BASH: `source C:/<path to virtual environment>/Scripts/activate`
 
 1. Activate virtual environment:
-    `C:\Users\Bruce\.virtualenvs\DjangoCustomUserStarter-_pwIjQD3\Scripts\activate.ps1`
+    `C:\<path to virtual environment>\Scripts\activate.ps1`[^local-things]
+[^local-things]:[Local Things](local_things.md)
 
 1. Create project skeleton:
     `django-admin startproject my_current_project .`

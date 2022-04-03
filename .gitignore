@@ -1,6 +1,7 @@
 secrets.*
 .vscode
 class_otter.code-
+local_things*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
