@@ -14,8 +14,7 @@
         * BASH: `source C:/<path to virtual environment>/Scripts/activate`
 
 1. Activate virtual environment:
-    `C:\<path to virtual environment>\Scripts\activate.ps1`[^local-things]
-[^local-things]:[Local Things](local_things.md)
+    `C:\<path to virtual environment>\Scripts\activate.ps1`
 
 1. Create project skeleton:
     `django-admin startproject my_current_project .`
