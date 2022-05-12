@@ -15,7 +15,7 @@
         * Powershell: `C:\<path to virtual environment>\Scripts\activate.ps1`
         * BASH: `source C:/<path to virtual environment>/Scripts/activate`
 
-1. Activate virtual environment:
+1. Activate virtual environment (Once python interpreter is chosen in VS Code, this command might not be needed):
     `C:\<path to virtual environment>\Scripts\activate.ps1`
 
 ### Set up Django:
