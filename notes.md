@@ -3,9 +3,11 @@
 ## NOTE:
 * I've used '.' in place of '/' in some directory paths below. It's a style decision. Please use '/' or '\\' in place of '.' whenever needed in your filesystem interface.
 
-## Set up Django:
+### Set up Virtual Environment
 
-1. Create pipenv and install Django and Docutils:
+1. It is assumed pipenv has already been installed. One way is `pip install pipenv`.
+
+1. Create pipenv and install Django, Docutils and any other packages needed. Packages can be installed later with similar `pipenv install` command:
     `pipenv install django==3.2 docutils==0.18.1`
 
 1. Note virtual environment location and starting command:
@@ -15,6 +17,8 @@
 
 1. Activate virtual environment:
     `C:\<path to virtual environment>\Scripts\activate.ps1`
+
+### Set up Django:
 
 1. Create project skeleton:
     `django-admin startproject my_current_project .`
