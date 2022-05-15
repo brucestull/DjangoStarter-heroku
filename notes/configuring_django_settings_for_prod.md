@@ -64,5 +64,30 @@
 1. Push changes to Heroku:  
 `git push heroku main`
 
+1. Set `DJANGO_SETTINGS_MODULE` to `'locallibrary.settings.production'` on production server. This will set up server to run the production settings since we will set a non-empty value for `DJANGO_SETTINGS_MODULE`:  
+`heroku config:set DJANGO_SETTINGS_MODULE='my_current_project.settings.production'`
+
 1. Test deployed application:  
     * https://django-custom-user-starter.herokuapp.com/
+
+1. Verify `DEBUG` is `False`:  
+    ```
+    heroku login
+
+    heroku run python manage.py shell
+
+    from django.conf import settings as s
+
+    print(s.DEBUG)
+    ```
+
+1. Verify the `SECRET_KEY` which Django is using is the value in Heroku Config Vars:  
+    ```
+    heroku login
+
+    heroku run python manage.py shell
+
+    from django.conf import settings as s
+
+    print(s.SECRET_KEY)
+    ```
