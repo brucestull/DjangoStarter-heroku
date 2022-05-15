@@ -11,6 +11,13 @@
 1. Log in to Heroku in CLI:  
 `heroku login`
 
+1. Check remote git repositories before Heroku app creation:  
+`git remote -v`
+    ```
+    origin  https://github.com/brucestull/DjangoCustomUserStarter.git (fetch)
+    origin  https://github.com/brucestull/DjangoCustomUserStarter.git (push)
+    ```
+
 1. Create the Heroku app, our app name is `django-custom-user-starter`:  
 `heroku create django-custom-user-starter`  
 
@@ -18,3 +25,4 @@
     * https://django-custom-user-starter.herokuapp.com/
     * https://git.heroku.com/django-custom-user-starter.git
 
+1. Verify remote git repositories. There should be the existing repository and a new remote for Heroku:
