@@ -130,5 +130,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'users.CustomUser'
 
-LOGIN_REDIRECT_URL = "home"     # Our addition
-LOGOUT_REDIRECT_URL = "home"    # Our addition
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
+
+import django_on_heroku
+django_on_heroku.settings(locals())
+
