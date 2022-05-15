@@ -1,14 +1,12 @@
 # Django Starter with CustomUser and Docutils
 * A pre-built CustomUser Django starter. Has pre-built CustomUser( and a basic app).
-* See [notes.md](notes.md) for my notes.
+* See [setup.md](notes/setup.md) for my notes on `CustomUser` creation and `admindocs` setup.
+* See [deploy_to_heroku.md](notes/deploy_to_heroku.md) for notes on deploying to Heroku.
 
 
 ## Assumptions:
 * User has an IDE already set up and useable.
 * User has some version of Python installed.
-
-## Process:
-* [notes.md](notes.md)
 
 ## Resources:
 * [Contact Info]() to be added
