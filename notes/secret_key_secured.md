@@ -4,6 +4,13 @@
 
 * https://github.com/PdxCodeGuild/class_otter/blob/main/5%20Capstone/Heroku%20Deployment.md#environment-variables
 
+### Create `SECRET_KEY`:  
+```
+> python .\manage.py shell
+>>> from django.core.management.utils import get_random_secret_key
+>>> print(get_random_secret_key())
+```
+
 ## Relevent commit:
 * https://github.com/brucestull/DjangoCustomUserStarter/commit/609a3714d59340d30fa55ff5022f830bebd1b3bd
 
@@ -29,4 +36,4 @@
 `git push heroku main`
 
 1. Test deployed application:  
-* https://django-custom-user-starter.herokuapp.com/
+    * https://django-custom-user-starter.herokuapp.com/
