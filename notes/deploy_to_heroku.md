@@ -4,6 +4,9 @@
 * [Deploy to Heroku - Capstone guide](https://github.com/PdxCodeGuild/class_otter/blob/main/5%20Capstone/Heroku%20Deployment.md)
 * [Deploy to Heroku - devcenter.heroku.com](https://devcenter.heroku.com/articles/git#for-a-new-heroku-app)
 
+## Relevent commit:
+* https://github.com/brucestull/DjangoCustomUserStarter/pull/7/commits/0f0bfbe1fb5efd97b09ec2c8ae5cc72621f17d06
+
 ## Steps:
 
 1. Assumptions:  
