@@ -7,5 +7,5 @@
 
 1. Assumed Heroku CLI is installed. [Heroku CLI](https://devcenter.heroku.com/categories/command-line)
 
-1. Log in to Heroku in CLI:
+1. Log in to Heroku in CLI:  
 `heroku login`
