@@ -7,6 +7,7 @@
 ## Assumptions:
 * User has an IDE already set up and useable.
 * User has some version of Python installed.
+* User can set a local environment variable value for `SECRET_KEY`.
 
 ## Resources:
 * [Contact Info]() to be added
