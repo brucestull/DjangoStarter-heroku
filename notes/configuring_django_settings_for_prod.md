@@ -64,7 +64,7 @@
 1. Push changes to Heroku:  
 `git push heroku main`
 
-1. Set `DJANGO_SETTINGS_MODULE` to `'locallibrary.settings.production'` on production server. This will set up server to run the production settings since we will set a non-empty value for `DJANGO_SETTINGS_MODULE`:  
+1. Set `DJANGO_SETTINGS_MODULE` to `'my_current_project.settings.production'` on production server. This will set up server to run the production settings since we will set a non-empty value for `DJANGO_SETTINGS_MODULE`:  
 `heroku config:set DJANGO_SETTINGS_MODULE='my_current_project.settings.production'`
 
 1. Test deployed application:  
