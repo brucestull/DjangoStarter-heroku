@@ -28,4 +28,5 @@
 1. Push changes to Heroku:  
 `git push heroku main`
 
-
+1. Test deployed application:  
+* https://django-custom-user-starter.herokuapp.com/
