@@ -1,6 +1,6 @@
 # Django Starter with CustomUser and Docutils
 * A pre-built CustomUser Django starter. Has pre-built CustomUser( and a basic app).
-* See [setup.md](notes/setup.md) for my notes on `CustomUser` creation and `admindocs` setup.
+* See [setup.md](notes/setup.md) for my notes on creating a Django project with a `CustomUser` and include `admindocs`. This repository has some other added features in current version which are not included in those setup.md notes.
 * See [deploy_to_heroku.md](notes/deploy_to_heroku.md) for notes on deploying to Heroku.
 * How to [install pipenv](notes/install_pipenv.md).
 
