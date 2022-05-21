@@ -106,11 +106,11 @@
     * Get current migration number from `users\migrations`:  
     `ls .\users\migrations\`  
     * Sample output:  
-    ```
-    Mode                 LastWriteTime         Length Name
-    ----                 -------------         ------ ----
-    -a---           5/20/2022 12:20 PM           2921 0001_initial.py
-    ```
+        ```
+        Mode                 LastWriteTime         Length Name
+        ----                 -------------         ------ ----
+        -a---           5/20/2022 12:20 PM           2921 0001_initial.py
+        ```
     * We use `0001`, in this case, since `0001` is the prefix of the most recent migration `0001_initial.py`:  
     `python manage.py sqlmigrate users 0001`
 
