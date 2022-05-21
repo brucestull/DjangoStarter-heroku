@@ -112,7 +112,11 @@
         -a---           5/20/2022 12:20 PM           2921 0001_initial.py
         ```
     * We use `0001`, in this case, since `0001` is the prefix of the most recent migration `0001_initial.py`:  
-    `python manage.py sqlmigrate users 0001`
+    `python manage.py sqlmigrate users 0001`  
+    * Sample output:
+    ```
+
+    ```
 
 1. Apply the migrations to `users` app:  
     `python manage.py migrate`
