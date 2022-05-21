@@ -131,13 +131,13 @@
 
 1. Create directories and files:  
     * Directories:  
-        `my_current_project.templates`
-        `my_current_project.templates.registration`
+        `my_current_project.templates`  
+        `my_current_project.templates.registration`  
     * Files:  
-        `my_current_project.templates.base.html`
-        `my_current_project.templates.home.html`
-        `my_current_project.templates.registration.login.html`
-        `my_current_project.templates.registration.signup.html`
+        `my_current_project.templates.base.html`  
+        `my_current_project.templates.home.html`  
+        `my_current_project.templates.registration.login.html`  
+        `my_current_project.templates.registration.signup.html`  
 
 1. Add contents to `my_current_project.templates.base.html`:
     ```
