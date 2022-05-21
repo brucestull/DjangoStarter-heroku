@@ -1,5 +1,8 @@
 # Django Custom User Starter Notes
 
+## NOTE:
+* This documents uses '\\' as directory delimiter. Users of other operating systems may need to use '/' as their directory delimiter.
+
 ### Set up Virtual Environment
 
 1. It is assumed pipenv has already been installed. One way is `pip install pipenv`.
