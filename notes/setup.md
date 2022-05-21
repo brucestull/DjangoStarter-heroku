@@ -39,7 +39,7 @@
 1. Stop the server:  
     * Ctrl + c
 
-1. Modify `my_current_project.settings.py`:
+1. Modify `my_current_project\settings.py`:
     ```
     INSTALLED_APPS = [
         ...
@@ -50,7 +50,7 @@
     AUTH_USER_MODEL = "users.CustomUser"    # Our addition
     ```
 
-1. Modify `users.models.py`:
+1. Modify `users\models.py`:
     * Our `CustomUser` which inherits `AbstractUser` has lots of functionality already built in. See some other documentation for info.
     ```
     from django.contrib.auth.models import AbstractUser
@@ -63,7 +63,7 @@
             return self.username
     ```
 
-1. Create `users.forms.py`:
+1. Create `users\forms.py`:
     ```
     from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 
@@ -82,7 +82,7 @@
             fields = ("username", "email")
     ```
 
-1. Modify `users.admin.py`:
+1. Modify `users\admin.py`:
     ```
     from django.contrib import admin
     from django.contrib.auth.admin import UserAdmin
@@ -103,7 +103,7 @@
     `python manage.py makemigrations users`
 
 1. View the migrations which will be applied to `users` app:  
-    * Get current migration number from `users.migrations`.
+    * Get current migration number from `users\migrations`.
     `python manage.py sqlmigrate users 0001`
 
 1. Apply the migrations to `users` app:  
@@ -112,7 +112,7 @@
 1. Create `superuser`:  
     `python manage.py createsuperuser`
 
-1. Modify `my_current_project.settings.py`:  
+1. Modify `my_current_project\settings.py`:  
     * Direct Django templates engine to appropriate directory (in 'TEMPLATES' section).
         ```
         TEMPLATES = [
@@ -131,15 +131,15 @@
 
 1. Create directories and files:  
     * Directories:  
-        `my_current_project.templates`  
-        `my_current_project.templates.registration`  
+        `my_current_project\templates`  
+        `my_current_project\templates\registration`  
     * Files:  
-        `my_current_project.templates.base.html`  
-        `my_current_project.templates.home.html`  
-        `my_current_project.templates.registration.login.html`  
-        `my_current_project.templates.registration.signup.html`  
+        `my_current_project\templates\base.html`  
+        `my_current_project\templates\home.html`  
+        `my_current_project\templates\registration\login.html`  
+        `my_current_project\templates\registration\signup.html`  
 
-1. Add contents to `my_current_project.templates.base.html`:
+1. Add contents to `my_current_project\templates\base.html`:
     ```
     <!DOCTYPE html>
     <html>
@@ -156,7 +156,7 @@
     </html>
     ```
 
-1. Add contents to `my_current_project.templates.home.html`:
+1. Add contents to `my_current_project\templates\home.html`:
     ```
     {% extends "base.html" %}
 
@@ -174,7 +174,7 @@
     {% endblock %}
     ```
 
-1. Add contents to `my_current_project.templates.registration.login.html`:
+1. Add contents to `my_current_project\templates\registration\login.html`:
     ```
     {% extends "base.html" %}
 
@@ -190,7 +190,7 @@
     {% endblock %}
     ```
 
-1. Add contents to `my_current_project.templates.registration.signup.html`:
+1. Add contents to `my_current_project\templates\registration\signup.html`:
     ```
     {% extends "base.html" %}
 
@@ -206,7 +206,7 @@
     {% endblock %}
     ```
 
-1. Modify `my_current_project.urls.py` to match something similar:
+1. Modify `my_current_project\urls.py` to match something similar:
     ```
     from django.contrib import admin
     from django.urls import path, include
@@ -220,7 +220,7 @@
     ]
     ```
 
-1. Create `users.urls.py`:
+1. Create `users\urls.py`:
     ```
     from django.urls import path
 
@@ -231,7 +231,7 @@
     ]
     ```
 
-1. Modify `users.views.py`:
+1. Modify `users\views.py`:
     ```
     from django.urls import reverse_lazy
     from django.views.generic.edit import CreateView
@@ -251,7 +251,7 @@
     * `http://localhost:8010/admin/`
 
 ## Set up docutils:  
-1. Modify `my_current_project.settings.py`:
+1. Modify `my_current_project\settings.py`:
     ```
     INSTALLED_APPS = [
         ...
@@ -260,7 +260,7 @@
     ]
     ```
 
-1. Modify `my_current_project.urls.py` (insert before 'admin/' entry):
+1. Modify `my_current_project\urls.py` (insert before 'admin/' entry):
     ```
     urlpatterns = [
         ...
