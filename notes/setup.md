@@ -9,7 +9,7 @@
 
 1. Ensure your terminal session is within the root of project. Usually same directory as `manage.py`.
 
-1. Create pipenv and install Django, Docutils and any other packages needed. Packages can be installed later with similar `pipenv install` command:
+1. Create pipenv and install Django, Docutils and any other packages needed. Packages can be installed later with similar `pipenv install` command:  
     `pipenv install django==3.2 docutils==0.18.1`
 
 1. Note virtual environment location and starting command:
