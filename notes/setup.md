@@ -97,20 +97,20 @@
     admin.site.register(CustomUser, CustomUserAdmin)
     ```
 
-1. Create migrations for `users` app:
+1. Create migrations for `users` app:  
     `python manage.py makemigrations users`
 
-1. View the migrations which will be applied to `users` app:
+1. View the migrations which will be applied to `users` app:  
     * Get current migration number from `users.migrations`.
     `python manage.py sqlmigrate users 0001`
 
-1. Apply the migrations to `users` app:
+1. Apply the migrations to `users` app:  
     `python manage.py migrate`
 
-1. Create `superuser`:
+1. Create `superuser`:  
     `python manage.py createsuperuser`
 
-1. Modify `my_current_project.settings.py`:
+1. Modify `my_current_project.settings.py`:  
     * Direct Django templates engine to appropriate directory (in 'TEMPLATES' section).
         ```
         TEMPLATES = [
@@ -127,11 +127,11 @@
         LOGOUT_REDIRECT_URL = "home"    # Our addition
         ```
 
-1. Create directories and files:
-    * Directories:
+1. Create directories and files:  
+    * Directories:  
         `my_current_project.templates`
         `my_current_project.templates.registration`
-    * Files:
+    * Files:  
         `my_current_project.templates.base.html`
         `my_current_project.templates.home.html`
         `my_current_project.templates.registration.login.html`
@@ -242,13 +242,13 @@
         template_name = 'registration/signup.html'
     ```
 
-1. Test user login/logout/signup:
+1. Test user login/logout/signup:  
     `python manage.py runserver 8010`
 
-1. Test admin interface:
+1. Test admin interface:  
     * `http://localhost:8010/admin/`
 
-## Set up docutils:
+## Set up docutils:  
 1. Modify `my_current_project.settings.py`:
     ```
     INSTALLED_APPS = [
