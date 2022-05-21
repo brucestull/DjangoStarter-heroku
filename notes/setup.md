@@ -17,24 +17,24 @@
         * Powershell: `C:\<path to virtual environment>\Scripts\activate.ps1`
         * BASH: `source C:/<path to virtual environment>/Scripts/activate`
 
-1. Activate virtual environment (Once python interpreter is chosen in VS Code, this command might not be needed):
+1. Activate virtual environment (Once python interpreter is chosen in VS Code, this command might not be needed):  
     `C:\<path to virtual environment>\Scripts\activate.ps1`
 
 ### Set up Django:
 
-1. Create project skeleton:
+1. Create project skeleton:  
     `django-admin startproject my_current_project .`
 
-1. Create `users` app:
+1. Create `users` app:  
     `python manage.py startapp users`
 
-1. Test for green rocket:
-    * Start server at some port (I have chosen optional non-default 8010):
+1. Test for green rocket:  
+    * Start server at some port (I have chosen optional non-default 8010):  
     `python manage.py runserver 8010`
-    * Verify green rocket:
+    * Verify green rocket:  
     `http://localhost:8010/`
 
-1. Stop the server:
+1. Stop the server:  
     * Ctrl + c
 
 1. Modify `my_current_project.settings.py`:
