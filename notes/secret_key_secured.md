@@ -36,4 +36,5 @@
 `git push heroku main`
 
 1. Test deployed application:  
+    * Use your link to your Heroku deployment. The next link is to my Heroku deployment of this custom user repo.
     * https://django-custom-user-starter.herokuapp.com/
