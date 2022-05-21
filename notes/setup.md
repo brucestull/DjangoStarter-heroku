@@ -1,8 +1,5 @@
 # Django Custom User Starter Notes
 
-## NOTE:
-* I've used '.' in place of '/' in some directory paths below. It's a style decision. Please use '/' or '\\' in place of '.' whenever needed in your filesystem interface.
-
 ### Set up Virtual Environment
 
 1. It is assumed pipenv has already been installed. One way is `pip install pipenv`.
