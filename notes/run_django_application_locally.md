@@ -14,7 +14,7 @@
 * LINK-FOR-INSTRUCTIONS-TO-CLONE-REPO
 
 ### Start in root of repository: 
-* `cd repository-root-directory` 
+* `cd DjangoCustomUserStarter` 
 * Sample current directory contents:  
     `ls`  
     ```
@@ -35,6 +35,9 @@
     ```
 
 ### Install `pipenv`:  
+- [ ] `pip install pipenv`  
+
+### Create `pipenv` virtual environment:  
 - [ ] `pipenv install`  
 
 ### Activate virtual environment:  
