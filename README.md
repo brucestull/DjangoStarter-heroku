@@ -19,3 +19,4 @@
 * [Contact Info]() to be added
 * Method: [CustomUser - Will Vincent - LearnDjango](https://learndjango.com/tutorials/django-custom-user-model)
 * Docutils: [The Django admin documentation generator](https://docs.djangoproject.com/en/4.0/ref/contrib/admin/admindocs/)
+* [DjangoCustomUserStarter Project Board](https://github.com/brucestull/DjangoCustomUserStarter/projects/1)
