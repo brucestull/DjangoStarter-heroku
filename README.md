@@ -4,7 +4,7 @@
     * https://django-custom-user-starter.herokuapp.com/  
     * Site may take a short time to load since the server may be asleep.  
 * Instructions to run this application [locally](notes/run_django_application_locally.md).
-* A pre-built CustomUser Django starter. Has pre-built CustomUser( and a basic app).
+* A pre-built CustomUser Django starter. Has pre-built CustomUser (user management app).
 * See [setup.md](notes/setup.md) for my notes on creating a Django project with a `CustomUser` and include `admindocs`. This repository has some other added features in current version which are not included in those setup.md notes.
 * See [deploy_to_heroku.md](notes/deploy_to_heroku.md) for notes on deploying to Heroku.
 * How to [install pipenv](notes/install_pipenv.md).
