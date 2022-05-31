@@ -18,6 +18,10 @@
 * Sample current directory contents:  
     `ls`  
     ```
+    PS C:\Users\Bruce\Programming\DjangoCustomUserStarter> ls
+
+        Directory: C:\Users\Bruce\Programming\DjangoCustomUserStarter
+        
     Mode                 LastWriteTime         Length Name
     ----                 -------------         ------ ----
     d----          2022-05-15    15:50                my_current_project
