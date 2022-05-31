@@ -9,6 +9,12 @@
 * See [deploy_to_heroku.md](notes/deploy_to_heroku.md) for notes on deploying to Heroku.
 * How to [install pipenv](notes/install_pipenv.md).
 
+## Features:
+* User creation, login, and logout functionality.
+* Django admin documentation generator.
+* Separate settings config files for development and production.
+* Settings config set up for deployment to Heroku.
+
 
 ## Assumptions:
 * User has an IDE already set up and useable.
