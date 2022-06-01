@@ -3,6 +3,9 @@
 ## Assumptions:
 
 * User has `python` installed.
+* Commands are invoked in a terminal session in the root of the project directory structure.
+    * Sample location:  
+    `C:\Users\Bruce\Programming\DjangoCustomUserStarter`
 
 ## Notes:
 
@@ -39,7 +42,7 @@
     ```
 
 ### Install `pipenv`:  
-- [ ] `pip install pipenv`  
+- [ ] `pip install --user pipenv`  
 
 ### Create `pipenv` virtual environment:  
 - [ ] `pipenv install`  
