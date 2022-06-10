@@ -1,5 +1,8 @@
 # Django Starter with CustomUser and Docutils
 
+* Link to project on new repo: https://github.com/brucestull/DjangoStarter
+    * I'm restarting the project. Want to be able to compare the way I documents not to the way I'm trying to improve my documentation. This repo will become a mostly static version of first documentation attempt.
+
 *  Production deployment:  
     * https://django-custom-user-starter.herokuapp.com/  
     * Site may take a short time to load since the server may be asleep.  
