@@ -9,6 +9,9 @@ DEBUG = False
 ALLOWED_HOSTS = ['django-custom-user-starter.herokuapp.com']
 
 
+MIDDLEWARE = MIDDLEWARE + ['whitenoise.middleware.WhiteNoiseMiddleware']
+
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
