@@ -21,9 +21,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 
-ALLOWED_HOSTS = ['django-custom-user-starter.herokuapp.com']
-
-
 # Application definition
 
 INSTALLED_APPS = [

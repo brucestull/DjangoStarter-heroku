@@ -5,6 +5,10 @@ import os
 
 DEBUG = False
 
+
+ALLOWED_HOSTS = ['django-custom-user-starter.herokuapp.com']
+
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 

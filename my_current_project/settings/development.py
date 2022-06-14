@@ -4,6 +4,9 @@ from my_current_project.settings.common import *
 DEBUG = True
 
 
+ALLOWED_HOSTS = []
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
