@@ -18,11 +18,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd3tigpb1ih3690',
-        'HOST': 'ec2-44-195-169-163.compute-1.amazonaws.com',
-        'PORT': 5432,
-        'USER': 'xusrikgdganklq',
-        'PASSWORD': 'e64d5782c1878b15f9eedb77282f79cd73be28b104f22724eac744513f8669bf',
+        'NAME': os.environ.get('DATABASE_NAME'),   # DATABASE_NAME
+        'HOST': os.environ.get('DATABASE_HOST'),   # DATABASE_HOST
+        'PORT': os.environ.get('DATABASE_PORT'),   # DATABASE_PORT
+        'USER': os.environ.get('DATABASE_USER'),   # DATABASE_USER
+        'PASSWORD': os.environ.get('DATABASE_PASSWORD'), # DATABASE_PASSWORD
     }
 }
 
