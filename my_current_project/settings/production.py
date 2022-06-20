@@ -6,7 +6,7 @@ import os
 DEBUG = False
 
 
-ALLOWED_HOSTS = ['totally-new-heroku-app-name.herokuapp.com']
+ALLOWED_HOSTS = ['test-app-with-database.herokuapp.com']
 
 
 MIDDLEWARE = MIDDLEWARE + ['whitenoise.middleware.WhiteNoiseMiddleware']
