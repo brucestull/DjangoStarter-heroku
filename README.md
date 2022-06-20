@@ -26,6 +26,7 @@
 1. [Clone DjangoCustomUserStarter Repository](notes/clone_django_custom_user_starter_repo.md)
 1. [Run Application Locally](notes/run_application_locally.md)
 1. [Deploy Application to Heroku](notes/deploy_application_to_heroku.md)
+1. [Add Properties to Heroku Config Vars](notes/add_properties_to_heroku_config_vars.md)
 
 
 ## Resources:
