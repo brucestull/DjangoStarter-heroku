@@ -1,30 +1,35 @@
 # Django Starter with CustomUser and Docutils
+* New project repository which is in active development: [DjangoCustomStarter](https://github.com/brucestull/DjangoCustomStarter)
 
-* Link to project on new repo: https://github.com/brucestull/DjangoStarter
-    * I'm restarting the project. Want to be able to compare the way I documents not to the way I'm trying to improve my documentation. This repo will become a mostly static version of first documentation attempt.
+* NOTE: Author is using PowerShell for this guide.
+* NOTE: There is a known issue where this project doesn't run properly on MacBook Air with M1 processor. Maybe something involving django-on-heroku. Changes might be made to accomodate this fact in the new project [DjangoCustomStarter](https://github.com/brucestull/DjangoCustomStarter). 
 
-*  Production deployment:  
-    * https://django-custom-user-starter.herokuapp.com/  
-    * Site may take a short time to load since the server may be asleep.  
-* Instructions to run this application [locally](notes/run_django_application_locally.md).
-* A pre-built CustomUser Django starter. Has pre-built CustomUser (user management app).
-* See [setup.md](notes/setup.md) for my notes on creating a Django project with a `CustomUser` and include `admindocs`. This repository has some other added features in current version which are not included in those setup.md notes.
-* See [deploy_to_heroku.md](notes/deploy_to_heroku.md) for notes on deploying to Heroku.
-* How to [install pipenv](notes/install_pipenv.md).
 
 ## Features:
-* User creation, login, and logout functionality.
+* Custom user model.
 * Django admin documentation generator.
-* Separate settings config files for development and production.
-* Settings config set up for deployment to Heroku.
+* Separate DEV and PROD settings.
+* Pipfile included.
+* Heroku Procfile included.
 
 
 ## Assumptions:
-* User has an IDE already set up and useable.
-* User has some version of Python installed.
+* User has functioning [Python](https://www.python.org/downloads/) 3.10 installation.
+* User has functioning [pipenv](https://pypi.org/project/pipenv/) installation.
+* User has functioning [git](https://git-scm.com/downloads) installation.
+* User is familiar with how to use terminal commands.
+* User has [Heroku](https://www.heroku.com/) account.
+* User had [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#install-the-heroku-cli) installed.
+
+## Process:
+1. [Clone DjangoCustomUserStarter Repository](notes/clone_django_custom_user_starter_repo.md)
+1. [Run Application Locally](notes/run_application_locally.md)
+1. [Deploy Application to Heroku](notes/deploy_application_to_heroku.md)
+
 
 ## Resources:
-* [Contact Info]() to be added
-* Method: [CustomUser - Will Vincent - LearnDjango](https://learndjango.com/tutorials/django-custom-user-model)
+* CustomUser method: [Django Best Practices: Custom User Model - Will Vincent - LearnDjango](https://learndjango.com/tutorials/django-custom-user-model)
 * Docutils: [The Django admin documentation generator](https://docs.djangoproject.com/en/4.0/ref/contrib/admin/admindocs/)
-* [DjangoCustomUserStarter Project Board](https://github.com/brucestull/DjangoCustomUserStarter/projects/1)
+* DjangoCustomUserStarter-archive [Project Board](https://github.com/brucestull/DjangoCustomUserStarter-archive/projects/1)
+* DjangoCustomUserStarter-archive [Repository](https://github.com/brucestull/DjangoCustomUserStarter-archive)
+
