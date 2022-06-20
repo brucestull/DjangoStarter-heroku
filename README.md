@@ -1,6 +1,8 @@
 # Django Starter with CustomUser and Docutils
 * Project repository in active development: [DjangoCustomStarter](https://github.com/brucestull/DjangoCustomStarter)
 
+* NOTE: Author is using PowerShell for this guide.
+
 
 ## Features:
 * Custom user model.
@@ -11,9 +13,16 @@
 
 
 ## Assumptions:
-* User has Python 3.10 installed.
-* User has pipenv installed.
+* User has functioning `Python 3.10` installation.
+* User has functioning `pipenv` installation.
+* User has functioning `git` installation.
+* User is familiar with how to use terminal commands.
 * User has Heroku account.
+
+## Process:
+1. [Clone DjangoCustomUserStarter Repository](notes/clone_django_custom_user_starter_repo.md)
+1. RUN-APPLICATION-LOCALLY
+1. DEPLOY-APPLICATION-TO-HEROKU
 
 
 ## Resources:
