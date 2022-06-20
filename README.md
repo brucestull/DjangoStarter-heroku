@@ -28,6 +28,7 @@
 1. [Deploy Application to Heroku](notes/deploy_application_to_heroku.md)
 1. [Add Properties to Heroku Config Vars](notes/add_properties_to_heroku_config_vars.md)
 1. [Create Empty Remote GitHub Repository and Push Existing Application](notes/create_empty_remote_repo_push_existing_application.md)
+1. [Modify Some Final Production Settings](notes/modify_some_final_production_settings.md)
 
 
 ## Resources:

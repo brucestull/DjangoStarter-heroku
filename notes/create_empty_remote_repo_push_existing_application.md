@@ -22,18 +22,18 @@
 1. Navigate, in terminal, to the applications local repository directory:
     * Sample location:  
         ```
-        PS C:\Users\Bruce\Programming\the-test-directory> Get-Location
+        PS C:\Users\Bruce\Programming\DjangoCustomUserStarter-archive> Get-Location
 
         Path
         ----
-        C:\Users\Bruce\Programming\the-test-directory
+        C:\Users\Bruce\Programming\DjangoCustomUserStarter-archive
         ```
 
 1. Verify the only remote repository is the one for Heroku:  
     `git remote -v`  
     * Sample output:
         ```
-        PS C:\Users\Bruce\Programming\the-test-directory> git remote -v
+        PS C:\Users\Bruce\Programming\DjangoCustomUserStarter-archive> git remote -v
         heroku  https://git.heroku.com/totally-new-heroku-app-name.git (fetch)
         heroku  https://git.heroku.com/totally-new-heroku-app-name.git (push)
         ```
@@ -42,15 +42,15 @@
     `git remote add origin https://github.com/brucestull/user-created-repository.git`  
     * Sample output:
         ```
-        PS C:\Users\Bruce\Programming\the-test-directory> git remote add origin https://github.com/brucestull/user-created-repository.git
-        PS C:\Users\Bruce\Programming\the-test-directory>
+        PS C:\Users\Bruce\Programming\DjangoCustomUserStarter-archive> git remote add origin https://github.com/brucestull/user-created-repository.git
+        PS C:\Users\Bruce\Programming\DjangoCustomUserStarter-archive>
         ```
 
 1. Verify the remote repository is added. We should now have the "heroku" named remote and our own GitHub "origin" named remote:  
     `git remote -v`
     * Sample output:
         ```
-        PS C:\Users\Bruce\Programming\the-test-directory> git remote -v
+        PS C:\Users\Bruce\Programming\DjangoCustomUserStarter-archive> git remote -v
         heroku  https://git.heroku.com/totally-new-heroku-app-name.git (fetch)
         heroku  https://git.heroku.com/totally-new-heroku-app-name.git (push)
         origin  https://github.com/brucestull/user-created-repository.git (fetch)
@@ -61,7 +61,7 @@
     `git push`  
     * Sample output:
         ```
-        PS C:\Users\Bruce\Programming\the-test-directory> git push
+        PS C:\Users\Bruce\Programming\DjangoCustomUserStarter-archive> git push
         fatal: The current branch main has no upstream branch.
         To push the current branch and set the remote as upstream, use
 
@@ -72,7 +72,7 @@
     `git push --set-upstream origin main`  
     * Sample output:
         ```
-        PS C:\Users\Bruce\Programming\the-test-directory> git push --set-upstream origin main
+        PS C:\Users\Bruce\Programming\DjangoCustomUserStarter-archive> git push --set-upstream origin main
         Enumerating objects: 296, done.
         Counting objects: 100% (296/296), done.
         Delta compression using up to 8 threads
@@ -91,7 +91,7 @@
 
 1. User now has the Django Custom User Starter local repository connected to their own remote on GitHub.
 
-1. Continue on to FINISH-SOME-PRODUCTION-SETTINGS.
+1. Continue on to [Modify Some Final Production Settings](modify_some_final_production_settings.md).
 
 
 ## Links:
