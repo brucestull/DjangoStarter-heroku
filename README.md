@@ -27,6 +27,7 @@
 1. [Run Application Locally](notes/run_application_locally.md)
 1. [Deploy Application to Heroku](notes/deploy_application_to_heroku.md)
 1. [Add Properties to Heroku Config Vars](notes/add_properties_to_heroku_config_vars.md)
+1. [Create Empty Remote GitHub Repository and Push Existing Application](notes/create_empty_remote_repo_push_existing_application.md)
 
 
 ## Resources:
@@ -34,4 +35,3 @@
 * Docutils: [The Django admin documentation generator](https://docs.djangoproject.com/en/4.0/ref/contrib/admin/admindocs/)
 * DjangoCustomUserStarter-archive [Project Board](https://github.com/brucestull/DjangoCustomUserStarter-archive/projects/1)
 * DjangoCustomUserStarter-archive [Repository](https://github.com/brucestull/DjangoCustomUserStarter-archive)
-
