@@ -14,10 +14,10 @@
 1. Click "Reveal Config Vars". We will be adding two "Config Vars".
 ![02_heroku_settings_click_reveal_config_vars](https://user-images.githubusercontent.com/47562501/174670444-789944c3-a649-4940-84c0-56fcf3003885.png)
 
-1. Note the empty spaces where we will input the `KEY` and `VALUE` pairs for environment "Config Vars".
+1. Note the database information already provided. We will use that later when we set up database settings in `production.py`.
 ![03_heroku_config_vars_database_url](https://user-images.githubusercontent.com/47562501/174670891-029b14cb-476e-4548-b03d-9639e96cce29.png)
 
-1. Note the database information already provided. We will use that later when we set up database settings in `production.py`.
+1. Note the empty spaces where we will input the `KEY` and `VALUE` pairs for environment "Config Vars".
 ![04_heroku_config_vars_key_value_fields](https://user-images.githubusercontent.com/47562501/174670940-ffeaaff4-c703-44a7-91cc-fd9a610caff5.png)
 
 1. First config var we will add is `DJANGO_SETTINGS_MODULE`. This is the dotted path from project root directory to project `production.py` file. But we will not include the `py` extension.
