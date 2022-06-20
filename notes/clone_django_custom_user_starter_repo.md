@@ -54,7 +54,10 @@
         -a---          2022-06-20    09:04            106 Procfile
         -a---          2022-06-20    09:04           1800 README.md
         ```
-1. RUN-APPLICATION-LOCALLY
+1. Remove git remote repository links for `origin` repository so user can push code to their own repository.
+`git remote remove origin`
+1. [Run Application Locally](run_application_locally.md)
+
 
 ## Links:
 [README.md](..\README.md)

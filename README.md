@@ -1,7 +1,8 @@
 # Django Starter with CustomUser and Docutils
-* Project repository in active development: [DjangoCustomStarter](https://github.com/brucestull/DjangoCustomStarter)
+* New project repository which is in active development: [DjangoCustomStarter](https://github.com/brucestull/DjangoCustomStarter)
 
 * NOTE: Author is using PowerShell for this guide.
+* NOTE: There is a known issue where this project doesn't run properly on MacBook Air with M1 processor. Maybe something involving django-on-heroku. Changes might be made to accomodate this fact in the new project [DjangoCustomStarter](https://github.com/brucestull/DjangoCustomStarter). 
 
 
 ## Features:
@@ -13,16 +14,17 @@
 
 
 ## Assumptions:
-* User has functioning `Python 3.10` installation.
-* User has functioning `pipenv` installation.
-* User has functioning `git` installation.
+* User has functioning [Python](https://www.python.org/downloads/) 3.10 installation.
+* User has functioning [pipenv](https://pypi.org/project/pipenv/) installation.
+* User has functioning [git](https://git-scm.com/downloads) installation.
 * User is familiar with how to use terminal commands.
-* User has Heroku account.
+* User has [Heroku](https://www.heroku.com/) account.
+* User had [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#install-the-heroku-cli) installed.
 
 ## Process:
 1. [Clone DjangoCustomUserStarter Repository](notes/clone_django_custom_user_starter_repo.md)
-1. RUN-APPLICATION-LOCALLY
-1. DEPLOY-APPLICATION-TO-HEROKU
+1. [Run Application Locally](notes/run_application_locally.md)
+1. [Deploy Application to Heroku](notes/deploy_application_to_heroku.md)
 
 
 ## Resources:
