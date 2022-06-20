@@ -13,7 +13,7 @@
         ----
         C:\Users\Bruce\Programming\DjangoCustomUserStarter-archive
         ```
-1. Create `pipenv` virtual environment using provided `Pipfile` configuration:
+1. Create `pipenv` virtual environment using provided `Pipfile` configuration:  
 `pipenv install`
     * Sample output:
         ```
@@ -39,7 +39,7 @@
         ```
         C:\Users\Bruce\.virtualenvs\DjangoCustomUserStarter-archive-KQz57jfW
         ```
-1. Activate virtual environment:
+1. Activate virtual environment:  
 `pipenv shell`
     * Sample output:
         ```
@@ -51,11 +51,11 @@
             https://aka.ms/powershell
             Type 'help' to get help.
             ```
-1. Perform `users` application migration:
+1. Perform `users` application migration:  
 `python manage.py migrate users`
-1. Perform project migration:
+1. Perform project migration:  
 `python manage.py migrate`
-1. Create superuser:
+1. Create superuser:  
 `python manage.py createsuperuser`
 1. Follow `createsuperuser` dialogue.
     * Sample output:
@@ -69,7 +69,7 @@
         Bypass password validation and create user anyway? [y/N]: y
         Superuser created successfully.
         ```
-1. Test application server:
+1. Test application server:  
 `python manage.py runserver`
 1. Open browser to server url:
     * http://localhost:8000/

@@ -1,5 +1,6 @@
 # Django Starter with CustomUser and Docutils
-* New project repository which is in active development: [DjangoCustomStarter](https://github.com/brucestull/DjangoCustomStarter)
+* New project repository which is in active development:
+    * [DjangoCustomStarter](https://github.com/brucestull/DjangoCustomStarter)
 
 * NOTE: Author is using PowerShell for this guide.
 * NOTE: There is a known issue where this project doesn't run properly on MacBook Air with M1 processor. Maybe something involving django-on-heroku. Changes might be made to accomodate this fact in the new project [DjangoCustomStarter](https://github.com/brucestull/DjangoCustomStarter). 

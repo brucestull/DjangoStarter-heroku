@@ -10,14 +10,14 @@
         ```
         C:\Users\Bruce
         ```
-1. Change directory into parent directory where repository will be located:
+1. Change directory into parent directory where repository will be located:  
 `Set-Location .\Programming\`
     * Sample output:
         ```
         PS C:\Users\Bruce> Set-Location .\Programming\
         PS C:\Users\Bruce\Programming>
         ```
-1. Clone remote repository into current directory:
+1. Clone remote repository into current directory:  
 `git clone https://github.com/brucestull/DjangoCustomUserStarter-archive`
     * Sample output:
         ```
@@ -30,9 +30,9 @@
 
         Resolving deltas: 100% (196/196), done.
         ```
-1. Change directory into local repository directory:
+1. Change directory into local repository directory:  
 `Set-Location .\DjangoCustomUserStarter-archive\`
-1. Verify directory contents:
+1. Verify directory contents:  
 `Get-ChildItem`
     * Sample output:
         ```
@@ -54,7 +54,7 @@
         -a---          2022-06-20    09:04            106 Procfile
         -a---          2022-06-20    09:04           1800 README.md
         ```
-1. Remove git remote repository links for `origin` repository so user can push code to their own repository.
+1. Remove git remote repository links for `origin` repository so user can push code to their own repository:  
 `git remote remove origin`
 1. [Run Application Locally](run_application_locally.md)
 

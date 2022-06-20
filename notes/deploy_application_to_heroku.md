@@ -14,7 +14,7 @@
         ----
         C:\Users\Bruce\Programming\DjangoCustomUserStarter-archive
         ```
-1. Verify current terminal session in root of repository, where `manage.py`, `Pipfile`, `Pipfile.lock`, and `Procfile` are located:
+1. Verify current terminal session in root of repository, where `manage.py`, `Pipfile`, `Pipfile.lock`, and `Procfile` are located:  
 `Get-ChildItem`
     * Sample output:
         ```
@@ -38,7 +38,7 @@
         -a---          2022-06-20    09:04            106 Procfile
         -a---          2022-06-20    09:13           1338 README.md
         ```
-1. Log in to Heroku CLI (user may be redirected to browser for login credentials):
+1. Log in to Heroku CLI (user may be redirected to browser for login credentials):  
 `heroku login`
     * Sample output:
         ```
@@ -48,7 +48,7 @@
         Logging in... done
         Logged in as user@email.app
         ```
-1. Create Heroku app from project repository:
+1. Create Heroku app from project repository:  
 `heroku create totally-new-heroku-app-name`
     * Sample output:
         ```
@@ -63,7 +63,7 @@
         * Heroku application git repository URL:
             * https://git.heroku.com/totally-new-heroku-app-name.git
 
-1. Verify Heroku git repository is set as a git remote:
+1. Verify Heroku git repository is set as a git remote:  
 `git remote -v`
     * Sample output:
         ```
@@ -72,7 +72,7 @@
         origin  https://github.com/brucestull/DjangoCustomUserStarter-archive (fetch)
         origin  https://github.com/brucestull/DjangoCustomUserStarter-archive (push)
         ```
-1. Push application to Heroku server:
+1. Push application to Heroku server:  
 `git push heroku main`
     * Sample output:
         ```
@@ -145,7 +145,7 @@
 1. Check application deployment on Heroku server:
     * Sample Heroku application deployment URL from above:
         * https://totally-new-heroku-app-name.herokuapp.com/
-1. Application needs an admin account so create a superuser account using preferred username:
+1. Application needs an admin account so create a superuser account using preferred username:  
 `heroku run python manage.py createsuperuser`
     * Sample output:
         ```
