@@ -13,20 +13,22 @@
 1. Click "Reveal Config Vars". We will be adding two "Config Vars".
 
 1. First config var we will add is `DJANGO_SETTINGS_MODULE`. This is the dotted path from project root directory to project `production.py` file. But we will not include the `py` extension.
-    * My example path:
+    * My example path:  
     `my_current_project.settings.production`
-    * So, the `KEY` is `DJANGO_SETTINGS_MODULE`
-    * And the `VALUE` is `my_current_project.settings.production`
+    * So, the `KEY` is:  
+    `DJANGO_SETTINGS_MODULE`
+    * And the `VALUE` is:  
+    `my_current_project.settings.production`
 
 1. Click "Add" button.
 
 1. Next config var is `SECRET_KEY`. We will generate this using Django shell.
     * In terminal session in root of repository, create a key and be prepared to copy it to Heroku application settings "Config Vars":
-    1. Start Django shell:
+    1. Start Django shell:  
     `python manage.py shell`
-    1. Import `get_random_secret_key`:
+    1. Import `get_random_secret_key`:  
     `from django.core.management.utils import get_random_secret_key`
-    1. Use `get_random_secret_key` to get a new key:
+    1. Use `get_random_secret_key` to get a new key:  
     `print(get_random_secret_key())`
     * Sample output:
         ```
