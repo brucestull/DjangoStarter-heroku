@@ -2,7 +2,7 @@
 
 ## Resources:
 * [Heroku](https://www.heroku.com/)
-* [Deploy a Django App to Heroku - Pretty Printed](https://www.youtube.com/watch?v=GMbVzl_aLxM)
+* [Deploy a Django App to Heroku - Video - Pretty Printed](https://www.youtube.com/watch?v=GMbVzl_aLxM)
 
 ## Process:
 1. Log in to Heroku and open the application dashboard:
