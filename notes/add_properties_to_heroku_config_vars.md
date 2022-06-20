@@ -5,25 +5,28 @@
 * [Deploy a Django App to Heroku - Video - Pretty Printed](https://www.youtube.com/watch?v=GMbVzl_aLxM)
 
 ## Process:
-1. Log in to Heroku and open the application dashboard:
+1. Log in to Heroku and open the dashboard for the application:
     * My dashboard link:
         * https://dashboard.heroku.com/apps/totally-new-heroku-app-name
 1. Open the "Settings" tab.
+
 1. Click "Reveal Config Vars". We will be adding two "Config Vars".
+
 1. First config var we will add is `DJANGO_SETTINGS_MODULE`. This is the dotted path from project root directory to project `production.py` file. But we will not include the `py` extension.
     * My example path:
     `my_current_project.settings.production`
     * So, the `KEY` is `DJANGO_SETTINGS_MODULE`
     * And the `VALUE` is `my_current_project.settings.production`
-    * Click "Add" button.
+
+1. Click "Add" button.
+
 1. Next config var is `SECRET_KEY`. We will generate this using Django shell.
-1. Add `SECRET_KEY` as the `KEY`.
-1. In terminal session in root of repository, create a key and be prepared to copy it to Heroku application settings "Config Vars":
-    * Start Django shell:
+    * In terminal session in root of repository, create a key and be prepared to copy it to Heroku application settings "Config Vars":
+    1. Start Django shell:
     `python manage.py shell`
-    * Import `get_random_secret_key`:
+    1. Import `get_random_secret_key`:
     `from django.core.management.utils import get_random_secret_key`
-    * Use `get_random_secret_key` to get a new key:
+    1. Use `get_random_secret_key` to get a new key:
     `print(get_random_secret_key())`
     * Sample output:
         ```
@@ -35,8 +38,13 @@
         >>> print(get_random_secret_key())
         o%tz4dbxm42$q=-_vj89l3@+)uw37a4b4!jurgw9&%+x9_f^o8
         ```
+
+1. Add `SECRET_KEY` as the `KEY`.
+
 1. Add the output string in previous step as the `VALUE`.
+
 1. Click the "Add" button.
+
 1. Dyno may restart itself during this process so there may be no need to restart it manually.
 1. Add user's repository as remote:
     * LINK-FOR-INSTRUCTIONS-TO-PUSH-LOCAL-TO-USER-REMOTE-REPOSITORY
