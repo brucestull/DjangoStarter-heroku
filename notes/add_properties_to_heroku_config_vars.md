@@ -58,8 +58,7 @@
 ![08_heroku_config_vars_click_add_button](https://user-images.githubusercontent.com/47562501/174671124-f6fe9b3f-4199-42ab-9c82-66867498248f.png)
 
 1. Dyno may restart itself during this process so there may be no need to restart it manually.
-1. Add user's repository as remote:
-    * LINK-FOR-INSTRUCTIONS-TO-PUSH-LOCAL-TO-USER-REMOTE-REPOSITORY
+1. [Create Empty Remote GitHub Repository and Push Existing Application](create_empty_remote_repo_push_existing_application.md):
 
 
 ## Links:
