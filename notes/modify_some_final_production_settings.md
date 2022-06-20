@@ -8,12 +8,16 @@
 ## Process:
 * NOTE: Heroku states in the datastore admin page that the "credentials are not permanent". I'll have to make a future guide on how to tell when that happens and how to update settings. I'm thinking that can be done by parsing the "Config Vars" `DATABASE_URL` but that is beyond the scope of current exercise.
 1. Open Heroku application dashboard and click the "Heroku Postgres" link:
+![01_click_heroku_postgres_link](https://user-images.githubusercontent.com/47562501/174688323-81eee655-fb08-412e-b5e5-52eac9115f27.png)
 
 1. Select the "Settings" tab:
+![02_select_settings_tab](https://user-images.githubusercontent.com/47562501/174688331-83362023-3dc9-4511-9fbc-224983dff98e.png)
 
 1. Click the "View Credentials..." button:
+![03_click_view_credentials_button](https://user-images.githubusercontent.com/47562501/174688337-a68c8a58-7829-40cb-af4d-cf9b5f1e1f13.png)
 
 1. Note the provided values:
+![04_note_database_settings](https://user-images.githubusercontent.com/47562501/174688350-12c12873-8ef0-4e23-b714-8b0daa21d507.png)
 
 1. I save the provided values as Heroku "Config Vars" using the following mapping:
 ```
@@ -25,6 +29,7 @@ Password    -->>    DATABASE_PASSWORD
 ```
 
 1. Save the database settings as Heroku "Config Vars" KEY-VALUE pairs:
+![05_config_vars_set_database_settings](https://user-images.githubusercontent.com/47562501/174688365-195b9f55-7c9e-4ede-b271-f8f0a2d7cde5.png)
 
 ## NOTE: The following steps are already done for the user. The steps are given here as information only.
 
