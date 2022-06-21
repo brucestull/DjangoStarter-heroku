@@ -79,6 +79,7 @@
         Port        5432
         Password    8c7ff88eb1c45aeccb61bf68d7540db7710e3c8adce41f8334b8f0f51aa534b4
         ```
+![08_config_vars_summary](https://user-images.githubusercontent.com/47562501/174795613-37bd5eba-6d47-4eec-b4b8-e0f673978c20.png)
 
 1. [Modify Some Final Production Settings and Deploy to Heroku](modify_some_final_production_settings.md)
 
