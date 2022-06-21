@@ -40,7 +40,7 @@
         PS C:\Users\Bruce\Programming\my-new-app-repository> git remote add origin https://github.com/brucestull/new-remote-repository.git
         ```
 
-1. Verify the remote repository is added. We should now have our own GitHub "origin" named remote:  
+1. Verify the remote repository is added. We should now have our own GitHub remote which has a local name of "origin":  
 `git remote -v`
     * Sample output:
         ```

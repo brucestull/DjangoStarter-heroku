@@ -40,7 +40,7 @@
         -a---          2022-06-20    21:14           2302 README.md
         ```
 
-1. Log in to Heroku CLI (user may be redirected to browser for login credentials):  
+1. Log in to Heroku CLI if not already logged in (user may be redirected to browser for login credentials):  
     `heroku login`
     * Sample output:
         ```
