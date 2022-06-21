@@ -1,4 +1,4 @@
-# Provision Database Server
+# Provision Database Server Instance
 
 ## Resources:
 * https://dashboard.heroku.com/
@@ -40,7 +40,6 @@
         ```
 ![09_take_note_of_database_settings](https://user-images.githubusercontent.com/47562501/174794541-1e2ef6b2-f4c6-43db-8c4e-76dd7b3f6666.png)
 
-1. [Add Properties to Heroku Config Vars](add_properties_to_heroku_config_vars.md)
 
 ## Links:
 [README.md](../README.md)

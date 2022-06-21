@@ -21,7 +21,8 @@
 1. [Create Empty Remote GitHub Repository and Push Existing Application](notes/create_empty_remote_repo_push_existing_application.md)
 1. [Run Application Locally](notes/run_application_locally.md)
 1. [Create Heroku Application Server Instance](notes/create_heroku_application_server_instance.md)
-1. [Provision Database Server](notes/provision_database_server.md)
+1. [Provision Database Server Instance](notes/provision_database_server_instance.md)
+
 1. [Add Properties to Heroku Config Vars](notes/add_properties_to_heroku_config_vars.md)
 1. [Modify Some Final Production Settings](notes/modify_some_final_production_settings.md)
 

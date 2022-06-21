@@ -78,7 +78,7 @@
         origin  https://github.com/brucestull/new-remote-repository.git (push)
         ```
 
-1. [Provision Database Server](provision_database_server.md)
+1. [Provision Database Server Instance](provision_database_server_instance.md)
 
 ## Links:
 [README.md](../README.md)
