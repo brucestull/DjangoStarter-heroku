@@ -91,7 +91,7 @@
 
 1. User now has the Django Custom User Starter local repository connected to their own remote on GitHub.
 
-1. Continue on to [Modify Some Final Production Settings](modify_some_final_production_settings.md).
+1. [Run Application Locally](run_application_locally.md)
 
 
 ## Links:

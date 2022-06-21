@@ -56,7 +56,8 @@
         ```
 1. Remove git remote repository links for `origin` repository so user can push code to their own repository:  
 `git remote remove origin`
-1. [Run Application Locally](run_application_locally.md)
+
+1. [Create Empty Remote GitHub Repository and Push Existing Application](create_empty_remote_repo_push_existing_application.md)
 
 
 ## Links:

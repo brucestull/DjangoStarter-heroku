@@ -24,7 +24,7 @@
 
 ## Process:
 1. [Clone DjangoCustomUserStarter Repository](notes/clone_django_custom_user_starter_repo.md)
-1. [Create Empty Remote GitHub Repository and Push Existing Application](create_empty_remote_repo_push_existing_application.md)
+1. [Create Empty Remote GitHub Repository and Push Existing Application](notes/create_empty_remote_repo_push_existing_application.md)
 1. [Run Application Locally](notes/run_application_locally.md)
 1. [Create Heroku Application Server Instance](notes/create_heroku_application_server_instance.md)
 1. [Add Properties to Heroku Config Vars](notes/add_properties_to_heroku_config_vars.md)
