@@ -7,31 +7,31 @@
 1. Open terminal in project root:
     * Sample location:
         ```
-        PS C:\Users\Bruce\Programming\my-new-app-repository> Get-Location
+        PS C:\Users\Bruce\Programming\my-local-repository> Get-Location
 
         Path
         ----
-        C:\Users\Bruce\Programming\my-new-app-repository
+        C:\Users\Bruce\Programming\my-local-repository
         ```
 
 1. Create `pipenv` virtual environment using provided `Pipfile` configuration:  
     `pipenv install`
     * Sample output:
         ```
-        PS C:\Users\Bruce\Programming\my-new-app-repository> pipenv install
+        PS C:\Users\Bruce\Programming\my-local-repository> pipenv install
         Creating a virtualenv for this project...
-        Pipfile: C:\Users\Bruce\Programming\my-new-app-repository\Pipfile
+        Pipfile: C:\Users\Bruce\Programming\my-local-repository\Pipfile
         Using C:/Users/Bruce/AppData/Local/Programs/Python/Python310/python.exe (3.10.4) to create virtualenv...
-        [   =] Creating virtual environment...created virtual environment CPython3.10.4.final.0-64 in 426ms
-        creator CPython3Windows(dest=C:\Users\Bruce\.virtualenvs\my-new-app-repository-QU2xSl00, clear=False, no_vcs_ignore=False, global=False)
+        [==  ] Creating virtual environment...created virtual environment CPython3.10.4.final.0-64 in 2858ms
+        creator CPython3Windows(dest=C:\Users\Bruce\.virtualenvs\my-local-repository-G4xugRBF, clear=False, no_vcs_ignore=False, global=False)
         seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\Bruce\AppData\Local\pypa\virtualenv)
             added seed packages: pip==22.1.2, setuptools==62.3.4, wheel==0.37.1
         activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
 
         Successfully created virtual environment!
-        Virtualenv location: C:\Users\Bruce\.virtualenvs\my-new-app-repository-QU2xSl00
+        Virtualenv location: C:\Users\Bruce\.virtualenvs\my-local-repository-G4xugRBF
         Installing dependencies from Pipfile.lock (16fbc4)...
-        ================================ 9/9 - 00:00:10
+        ================================ 9/9 - 00:00:09
         To activate this project's virtualenv, run pipenv shell.
         Alternatively, run a command inside the virtualenv with pipenv run.
         ```
@@ -39,14 +39,14 @@
 1. Note line with `Virtualenv location:`. This line will have the virtual environment location. This information may be useful later.
     * Sample location:
         ```
-        C:\Users\Bruce\.virtualenvs\my-new-app-repository-QU2xSl00
+        C:\Users\Bruce\.virtualenvs\my-local-repository-G4xugRBF
         ```
 
 1. Activate virtual environment:  
     `pipenv shell`
     * Sample output:
         ```
-        PS C:\Users\Bruce\Programming\my-new-app-repository> pipenv shell
+        PS C:\Users\Bruce\Programming\my-local-repository> pipenv shell
         Launching subshell in virtual environment...
         PowerShell 7.2.4
         Copyright (c) Microsoft Corporation.
@@ -59,7 +59,7 @@
     `python manage.py migrate users`
     * Sample output:
         ```
-        PS C:\Users\Bruce\Programming\my-new-app-repository> python manage.py migrate users
+        PS C:\Users\Bruce\Programming\my-local-repository> python manage.py migrate users
         Operations to perform:
         Apply all migrations: users
         Running migrations:
@@ -84,7 +84,7 @@
     `python manage.py migrate`
     * Sample output:
         ```
-        PS C:\Users\Bruce\Programming\my-new-app-repository> python manage.py migrate
+        PS C:\Users\Bruce\Programming\my-local-repository> python manage.py migrate
         Operations to perform:
         Apply all migrations: admin, auth, contenttypes, sessions, users
         Running migrations:
@@ -96,10 +96,10 @@
 
 1. Create superuser:  
     `python manage.py createsuperuser`
-    * Follow `createsuperuser` dialogue.
+    * Follow `createsuperuser` dialog.
         * Sample output:
             ```
-            PS C:\Users\Bruce\Programming\my-new-app-repository> python manage.py createsuperuser
+            PS C:\Users\Bruce\Programming\my-local-repository> python manage.py createsuperuser
             Username: admin
             Email address: admin@email.app
             Password:
@@ -110,7 +110,7 @@
             ```
 
 1. Test application on local server:  
-`python manage.py runserver`
+    `python manage.py runserver`
 
 1. Open browser to server address:
     * http://localhost:8000/
