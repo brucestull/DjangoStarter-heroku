@@ -7,14 +7,19 @@
 
 ## Process:
 
-1. Create an empty GitHub repository. Click the "New" button:
+1. Create an empty GitHub repository. Use https://github.com/new or Click the "New" button on GitHub user repository page:
     * NOTE: It is critical that this remote be an empty repository so there are no merge conflicts or history conflicts. Ensure that "Add a README.md" is not checked, "Add .gitignore" is set to "None" and "Choose a license" is set to "None". We can change this later if desired.
 
+1. Provide a repository name:
+![01_create_empty_repository](https://user-images.githubusercontent.com/47562501/174804053-9d5d8096-ec3d-411e-8c41-e775233a97a3.png)
+
 1. Click "Create repository" button:
+![02_click_create_repository_button](https://user-images.githubusercontent.com/47562501/174804077-044af48e-c18b-4f28-9b4c-37f65ded228d.png)
 
 1. Click the copy button for the repository address:
     * Sample repository address:  
     `https://github.com/brucestull/new-remote-repository.git`
+![03_click_copy_button_for_git_repo](https://user-images.githubusercontent.com/47562501/174804112-d7683dfc-0f6e-4a71-a6fe-279362a0dcfc.png)
 
 1. Navigate, in terminal, to the applications local repository directory:
     * Sample location:  
