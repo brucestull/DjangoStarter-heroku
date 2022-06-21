@@ -31,6 +31,7 @@
 1. Click "Add" button:
 ![05_click_add_button](https://user-images.githubusercontent.com/47562501/174795002-59dafe00-8764-49e8-8607-2fcabc7e33e2.png)
 
+1. [Add Django SECRET_KEY to Config Vars](add_secret_key_to_config_vars.md)
 
 ## Links:
 [README.md](../README.md)

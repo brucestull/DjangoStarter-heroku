@@ -87,6 +87,7 @@
     * Sample application address:  
         * https://totally-new-heroku-app-name.herokuapp.com/
 
+1. Add your own functionality to the application.
 
 ## Links:
 [README.md](../README.md)

@@ -1,7 +1,9 @@
 # Provision Database Server Instance
 
 ## Resources:
+* [Heroku](https://www.heroku.com/)
 * https://dashboard.heroku.com/
+* [Deploy a Django App to Heroku - Video - Pretty Printed](https://www.youtube.com/watch?v=GMbVzl_aLxM)
 
 ## Process:
 
@@ -39,6 +41,8 @@
         Password    8c7ff88eb1c45aeccb61bf68d7540db7710e3c8adce41f8334b8f0f51aa534b4
         ```
 ![09_take_note_of_database_settings](https://user-images.githubusercontent.com/47562501/174794541-1e2ef6b2-f4c6-43db-8c4e-76dd7b3f6666.png)
+
+1. [Add DJANGO_SETTINGS_MODULE to Config Vars](add_django_settings_module_to_config_vars.md)
 
 
 ## Links:

@@ -22,10 +22,11 @@
 1. [Run Application Locally](notes/run_application_locally.md)
 1. [Create Heroku Application Server Instance](notes/create_heroku_application_server_instance.md)
 1. [Provision Database Server Instance](notes/provision_database_server_instance.md)
-
-1. [Add Properties to Heroku Config Vars](notes/add_properties_to_heroku_config_vars.md)
-1. [Modify Some Final Production Settings](notes/modify_some_final_production_settings.md)
-
+1. [Add DJANGO_SETTINGS_MODULE to Config Vars](notes/add_django_settings_module_to_config_vars.md)
+1. [Add Django SECRET_KEY to Config Vars](notes/add_secret_key_to_config_vars.md)
+1. [Add Database Settings to Config Vars](notes/add_database_settings_to_config_vars.md)
+1. [Modify ALLOWED_HOSTS](notes/modify_allowed_hosts.md)
+1. [Push to Heroku and Create Superuser](notes/push_to_heroku_and_createsuperuser.md)
 
 ## Excellent resources, this project wouldn't have been possible without these:
 * CustomUser method: [Django Best Practices: Custom User Model - Will Vincent - LearnDjango](https://learndjango.com/tutorials/django-custom-user-model)
