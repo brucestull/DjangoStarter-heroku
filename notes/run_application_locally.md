@@ -79,7 +79,7 @@
 1. Investigate the Django Admin Documentation features:
     * http://localhost:8000/admin/doc/
     * http://localhost:8000/admin/doc/models/users.customuser/
-1. [Deploy Application to Heroku](deploy_application_to_heroku.md)
+1. [Create Heroku Application Server Instance](create_heroku_application_server_instance.md)
 
 
 ## Links:
