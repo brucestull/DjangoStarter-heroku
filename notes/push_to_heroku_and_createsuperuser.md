@@ -1,15 +1,8 @@
-# Modify Some Final Production Settings and Deploy to Heroku
+# Push to Heroku and Create Superuser
 
 ## Resources:
-* [Heroku](https://www.heroku.com/)
-* [Deploy a Django App to Heroku - Video - Pretty Printed](https://www.youtube.com/watch?v=GMbVzl_aLxM)
 
 ## Process:
-
-1. Edit `ALLOWED_HOSTS` property in `production.py` to include the heroku application root domain:  
-    `ALLOWED_HOSTS = ['totally-new-heroku-app-name.herokuapp.com']`
-
-1. Git `add`, `commit`, and `push` to `origin`:
 
 1. Git `push` to `heroku`:  
     `git push heroku main`
@@ -94,8 +87,7 @@
     * Sample application address:  
         * https://totally-new-heroku-app-name.herokuapp.com/
 
-1. Verify application still works locally and in production.
-
+1. Add your own functionality to the application.
 
 ## Links:
 [README.md](../README.md)
