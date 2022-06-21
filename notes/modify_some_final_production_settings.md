@@ -1,90 +1,98 @@
-# Modify Some Final Production Settings
+# Modify Some Final Production Settings and Deploy to Heroku
 
 ## Resources:
 * [Heroku](https://www.heroku.com/)
 * [Deploy a Django App to Heroku - Video - Pretty Printed](https://www.youtube.com/watch?v=GMbVzl_aLxM)
 
-
 ## Process:
-* NOTE: Heroku states in the datastore admin page that the "credentials are not permanent". I'll have to make a future guide on how to tell when that happens and how to update settings. I'm thinking that can be done by parsing the "Config Vars" `DATABASE_URL` but that is beyond the scope of current exercise.
-1. Open Heroku application dashboard and click the "Heroku Postgres" link:
-![01_click_heroku_postgres_link](https://user-images.githubusercontent.com/47562501/174688323-81eee655-fb08-412e-b5e5-52eac9115f27.png)
 
-1. Select the "Settings" tab:
-![02_select_settings_tab](https://user-images.githubusercontent.com/47562501/174688331-83362023-3dc9-4511-9fbc-224983dff98e.png)
+1. Edit `ALLOWED_HOSTS` property in `production.py` to include the heroku application root domain:  
+    `ALLOWED_HOSTS = ['totally-new-heroku-app-name.herokuapp.com']`
 
-1. Click the "View Credentials..." button:
-![03_click_view_credentials_button](https://user-images.githubusercontent.com/47562501/174688337-a68c8a58-7829-40cb-af4d-cf9b5f1e1f13.png)
+1. Git `add`, `commit`, and `push` to `origin`:
 
-1. Note the provided values:
-![04_note_database_settings](https://user-images.githubusercontent.com/47562501/174688350-12c12873-8ef0-4e23-b714-8b0daa21d507.png)
-
-1. I save the provided values as Heroku "Config Vars" using the following mapping:
-```
-Host        -->>    DATABASE_HOST
-Database    -->>    DATABASE_NAME
-User        -->>    DATABASE_USER
-Port        -->>    DATABASE_PORT
-Password    -->>    DATABASE_PASSWORD
-```
-
-1. Save the database settings as Heroku "Config Vars" KEY-VALUE pairs:
-![05_config_vars_set_database_settings](https://user-images.githubusercontent.com/47562501/174688365-195b9f55-7c9e-4ede-b271-f8f0a2d7cde5.png)
-
-## NOTE: The following steps are already done for the user. The steps are given here as information only.
-
-1. Move the `ALLOWED_HOSTS` property from `common.py` and paste into `development.py` and `production.py`:
-    1. The `ALLOWED_HOSTS` of `development.py` can maybe be left empty:  
-        `ALLOWED_HOSTS = []`
-    1. The `ALLOWED_HOSTS` of `production.py` needs to have the deployed server's address:  
-        `ALLOWED_HOSTS = ['totally-new-heroku-app-name.herokuapp.com']`
-
-1. Move the `DATABASES` property setting from `common.py` to `development.py`:
-    * Move the following section:
+1. Git `push` to `heroku`:  
+    `git push heroku main`
+    * Sample output:
         ```
-        DATABASES = {
-            'default': {
-                'ENGINE': 'django.db.backends.sqlite3',
-                'NAME': BASE_DIR / 'db.sqlite3',
-            }
-        }
+        PS C:\Users\Bruce\Programming\my-new-app-repository> git push heroku main
+        Enumerating objects: 412, done.
+        Counting objects: 100% (412/412), done.
+        Delta compression using up to 8 threads
+        Compressing objects: 100% (175/175), done.
+        Writing objects: 100% (412/412), 138.32 KiB | 138.32 MiB/s, done.
+        Total 412 (delta 241), reused 399 (delta 232), pack-reused 0
+        remote: Compressing source files... done.
+        remote: Building source:
+        remote:
+        remote: -----> Building on the Heroku-20 stack
+        remote: -----> Determining which buildpack to use for this app
+        remote: -----> Python app detected
+        remote: -----> Using Python version specified in Pipfile.lock
+        remote: cp: cannot stat '/tmp/build_02de82b2/requirements.txt': No such file or directory
+        remote: -----> Installing python-3.10.5
+        remote: -----> Installing pip 22.1.2, setuptools 60.10.0 and wheel 0.37.1
+        remote: -----> Installing dependencies with Pipenv 2020.11.15
+        remote:        Installing dependencies from Pipfile.lock (16fbc4)...
+        remote:        Ignoring tzdata: markers 'sys_platform == "win32"' don't match your environment
+        remote: -----> Installing SQLite3
+        remote: -----> $ python manage.py collectstatic --noinput
+        remote:        128 static files copied to '/tmp/build_02de82b2/staticfiles'.
+        remote:
+        remote: -----> Discovering process types
+        remote:        Procfile declares types -> release, web
+        remote:
+        remote: -----> Compressing...
+        remote:        Done: 45.1M
+        remote: -----> Launching...
+        remote:  !     Release command declared: this new release will not be available until the command succeeds.
+        remote:        Released v14
+        remote:        https://totally-new-heroku-app-name.herokuapp.com/ deployed to Heroku
+        remote:
+        remote: Verifying deploy... done.
+        remote: Running release command...
+        remote:
+        remote: Operations to perform:
+        remote:   Apply all migrations: users
+        remote: Running migrations:
+        remote:   Applying contenttypes.0001_initial... OK
+        remote:   Applying contenttypes.0002_remove_content_type_name... OK
+        remote:   Applying auth.0001_initial... OK
+        remote:   Applying auth.0002_alter_permission_name_max_length... OK
+        remote:   Applying auth.0003_alter_user_email_max_length... OK
+        remote:   Applying auth.0004_alter_user_username_opts... OK
+        remote:   Applying auth.0005_alter_user_last_login_null... OK
+        remote:   Applying auth.0006_require_contenttypes_0002... OK
+        remote:   Applying auth.0007_alter_validators_add_error_messages... OK
+        remote:   Applying auth.0008_alter_user_username_max_length... OK
+        remote:   Applying auth.0009_alter_user_last_name_max_length... OK
+        remote:   Applying auth.0010_alter_group_name_max_length... OK
+        remote:   Applying auth.0011_update_proxy_permissions... OK
+        remote:   Applying auth.0012_alter_user_first_name_max_length... OK
+        remote:   Applying users.0001_initial... OK
+        remote: Operations to perform:
+        remote:   Apply all migrations: admin, auth, contenttypes, sessions, users
+        remote: Running migrations:
+        remote:   Applying admin.0001_initial... OK
+        remote:   Applying admin.0002_logentry_remove_auto_add... OK
+        remote:   Applying admin.0003_logentry_add_action_flag_choices... OK
+        remote:   Applying sessions.0001_initial... OK
+        remote: Waiting for release.... done.
+        To https://git.heroku.com/totally-new-heroku-app-name.git
+        * [new branch]      main -> main
         ```
 
-1. Add an import of `os` at the top of `production.py`:
-    ```
-    import os
-    ```
+1. Log in to Heroku CLI if not already logged in:  
+    `heroku login`
 
-1. Create a `DATABASES` property in `production.py` and give it the following contents. These statements use `os` to get the database server values from "Config Vars"s environment variables. The `ENGINE` value instructs Heroku to use a `postgresql` database:
-    ```
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': os.environ.get('DATABASE_NAME'),
-            'HOST': os.environ.get('DATABASE_HOST'),
-            'PORT': os.environ.get('DATABASE_PORT'),
-            'USER': os.environ.get('DATABASE_USER'),
-            'PASSWORD': os.environ.get('DATABASE_PASSWORD'),
-        }
-    }
-    ```
+1. Create superuser:  
+    `heroku run python manage.py createsuperuser`
 
-1. Add a `STATIC_ROOT` property to `production.py` to provide place for static files on the production server. I'm not yet sure why or how this it true. Will need to research this:
-    ```
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-    ```
+1. Follow `createsuperuser` dialog.
 
-1. Add `WhiteNoiseMiddleware` to the `MIDDLEWARE` property in `production.py`:
-    ```
-    MIDDLEWARE = MIDDLEWARE + ['whitenoise.middleware.WhiteNoiseMiddleware']
-    ```
-
-1. Remove the `django_on_heroku` import and reference from `common.py` since we have manually made the changes to settings which `django_on_heroku` provides:
-    * Remove the following from `common.py`:
-        ```
-        import django_on_heroku
-        django_on_heroku.settings(locals())
-        ```
+1. Log in to deployed application:
+    * Sample application address:  
+        * https://totally-new-heroku-app-name.herokuapp.com/
 
 1. Verify application still works locally and in production.
 
