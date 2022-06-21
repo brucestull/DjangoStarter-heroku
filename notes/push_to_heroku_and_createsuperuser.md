@@ -8,7 +8,7 @@
     `git push heroku main`
     * Sample output:
         ```
-        PS C:\Users\Bruce\Programming\my-new-app-repository> git push heroku main
+        PS C:\Users\Bruce\Programming\my-local-repository> git push heroku main
         Enumerating objects: 412, done.
         Counting objects: 100% (412/412), done.
         Delta compression using up to 8 threads

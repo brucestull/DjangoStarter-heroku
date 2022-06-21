@@ -18,9 +18,11 @@
 ![03_note_key_and_value_fields](https://user-images.githubusercontent.com/47562501/174794940-3e288522-39f5-4ca7-8b01-afaa5ef3312a.png)
 
 1. First config var we will add is `DJANGO_SETTINGS_MODULE`. This is the dotted path from project root directory to project `production.py` file. But we will not include the `py` extension. This value is used by `wsgi.py` and `manage.py` to set the production deployment to use the `production.py` settings:
-    * My example file slash path:  
-    `my_current_project\settings\production`
-    * My example dotted path:
+    * My absolute path:  
+    `C:\Users\Bruce\Programming\my-local-repository\my_current_project\settings\production.py`
+    * My example file slash path to `production.py`:  
+    `my_current_project\settings\production.py`
+    * My example dotted path:  
     `my_current_project.settings.production`
     * So, the `KEY` is:  
     `DJANGO_SETTINGS_MODULE`

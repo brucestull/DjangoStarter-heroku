@@ -17,13 +17,13 @@
     `print(get_random_secret_key())`
     * Sample output:
         ```
-        PS C:\Users\Bruce\Programming\my-new-app-repository> python manage.py shell
+        PS C:\Users\Bruce\Programming\my-local-repository> python .\manage.py shell
         Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)] on win32
         Type "help", "copyright", "credits" or "license" for more information.
         (InteractiveConsole)
         >>> from django.core.management.utils import get_random_secret_key
         >>> print(get_random_secret_key())
-        oh%0+gz6)f0$=^y8y!p45+*y1pi($!x$wjc0own=5hi&j$-jmx
+        sm)_qnnxl1*a4r$vtwe%cc%+=t4uyxlqh9d%3_u$=e@oc-)61(
         >>> quit()
         ```
 
