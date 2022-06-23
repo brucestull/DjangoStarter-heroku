@@ -60,6 +60,8 @@
         -a---          2022-06-21    09:27            106 Procfile
         -a---          2022-06-21    09:27           2405 README.md
         ```
+    * Directory structure of project using `tree /f /a`:
+        * [Project Directory Structure](directory_structure.md)
 
 1. Verify current remote repository. `origin` is the local name for the https://github.com/brucestull/DjangoCustomUserStarter.git remote:  
     `git remote -v`

@@ -1,4 +1,5 @@
-# Django Starter with CustomUser and Docutils
+# Django Starter with CustomUser, Django Documentation Generator, DEV-PROD settings, pipenv, and Heroku Procfile.
+
 * NOTE: Author is using PowerShell for this guide.
 
 ## Features:
@@ -7,6 +8,7 @@
 * Separate DEV and PROD settings.
 * Pipfile included.
 * Heroku Procfile included.
+* [Project Directory Structure](notes/directory_structure.md)
 
 ## Assumptions:
 * User has functioning [Python](https://www.python.org/downloads/) 3.10 installation.
