@@ -13,7 +13,7 @@
 
 1. Clone your remote repository to your local computer directory.
 
-1. [Create Empty Remote GitHub Repository and Push Existing Application](create_empty_remote_repo_push_existing_application.md)
+1. Proceed to [Run Application Locally](02_run_application_locally.md)
 
 
 ## Links:

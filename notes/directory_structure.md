@@ -36,7 +36,7 @@
         |       modify_allowed_hosts.md
         |       provision_database_server_instance.md
         |       push_to_heroku_and_createsuperuser.md
-        |       run_application_locally.md
+        |       02_run_application_locally.md
         |
         +---templates
         |   |   base.html

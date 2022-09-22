@@ -21,8 +21,7 @@
 
 ## Process:
 1. [Create Repository from DjangoCustomUserStarter Template](notes/01_create_repository_from_template.md)
-1. [Create Empty Remote GitHub Repository and Push Existing Application](notes/create_empty_remote_repo_push_existing_application.md) NOTE: Using a template of this repo is better option. Documentation is in progress.
-1. [Run Application Locally](notes/run_application_locally.md)
+1. [Run Application Locally](notes/02_run_application_locally.md)
 1. [Create Heroku Application Server Instance](notes/create_heroku_application_server_instance.md)
 1. [Provision Database Server Instance](notes/provision_database_server_instance.md)
 1. [Add DJANGO_SETTINGS_MODULE to Config Vars](notes/add_django_settings_module_to_config_vars.md)
