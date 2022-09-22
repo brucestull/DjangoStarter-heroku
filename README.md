@@ -20,7 +20,7 @@
 * User had [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#install-the-heroku-cli) installed.
 
 ## Process:
-1. [Clone DjangoCustomUserStarter Repository](notes/clone_django_custom_user_starter_repo.md) NOTE: Using the template of this repo is better option. Documentation is in progress.
+1. [Create Repository from DjangoCustomUserStarter Template](notes/01_create_repository_from_template.md)
 1. [Create Empty Remote GitHub Repository and Push Existing Application](notes/create_empty_remote_repo_push_existing_application.md) NOTE: Using a template of this repo is better option. Documentation is in progress.
 1. [Run Application Locally](notes/run_application_locally.md)
 1. [Create Heroku Application Server Instance](notes/create_heroku_application_server_instance.md)

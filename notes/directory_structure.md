@@ -29,7 +29,7 @@
         |       add_database_settings_to_config_vars.md
         |       add_django_settings_module_to_config_vars.md
         |       add_secret_key_to_config_vars.md
-        |       clone_django_custom_user_starter_repo.md
+        |       01_create_repository_from_template.md
         |       create_empty_remote_repo_push_existing_application.md
         |       create_heroku_application_server_instance.md
         |       directory_structure.md
