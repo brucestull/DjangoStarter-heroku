@@ -26,6 +26,7 @@
     |           production.py
     |
     +---notes
+    |       00_commands_and_links.md
     |       00_directory_structure.md
     |       01_create_repository_from_template.md
     |       02_run_application_locally.md
