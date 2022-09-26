@@ -4,10 +4,12 @@
 
 ## Process:
 
-1. Get remote repository URL:
-    * https://github.com/brucestull/DjangoCustomUserStarter.git
-
-1. Use `Use this template` button.
+1. Use GitHub 'Template' feature by using one of the following:
+    * Use `generate` endpoint:
+        1. https://github.com/brucestull/DjangoCustomUserStarter/generate
+    * Visit repository URL and click the `Use this template` button:
+        1. https://github.com/brucestull/DjangoCustomUserStarter
+        1. Click `Use this template` button.
 
 1. Follow dialog to create your own repository.
 
