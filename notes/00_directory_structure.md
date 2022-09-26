@@ -26,16 +26,16 @@
         |           production.py
         |
         +---notes
-        |       add_database_settings_to_config_vars.md
-        |       add_django_settings_module_to_config_vars.md
-        |       add_secret_key_to_config_vars.md
+        |       07_add_database_settings_to_config_vars.md
+        |       05_add_django_settings_module_to_config_vars.md
+        |       06_add_secret_key_to_config_vars.md
         |       01_create_repository_from_template.md
         |       create_empty_remote_repo_push_existing_application.md
-        |       create_heroku_application_server_instance.md
-        |       directory_structure.md
-        |       modify_allowed_hosts.md
-        |       provision_database_server_instance.md
-        |       push_to_heroku_and_createsuperuser.md
+        |       03_create_heroku_application_server_instance.md
+        |       00_directory_structure.md
+        |       08_modify_allowed_hosts.md
+        |       04_provision_database_server_instance.md
+        |       09_push_to_heroku_and_createsuperuser.md
         |       02_run_application_locally.md
         |
         +---templates

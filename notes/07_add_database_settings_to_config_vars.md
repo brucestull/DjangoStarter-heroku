@@ -1,4 +1,4 @@
-# Add Database Settings to Config Vars
+# 07 - Add Database Settings to Config Vars
 
 ## Resources:
 * [Deploy a Django App to Heroku - Video - Pretty Printed](https://www.youtube.com/watch?v=GMbVzl_aLxM)
@@ -25,7 +25,7 @@
     * Sample "Config Vars":  
 ![08_config_vars_summary](https://user-images.githubusercontent.com/47562501/174795613-37bd5eba-6d47-4eec-b4b8-e0f673978c20.png)
 
-1. [Modify ALLOWED_HOSTS](modify_allowed_hosts.md)
+1. [Modify ALLOWED_HOSTS](08_modify_allowed_hosts.md)
 
 ## Links:
 [README.md](../README.md)

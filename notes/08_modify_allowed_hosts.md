@@ -1,4 +1,4 @@
-# Modify ALLOWED_HOSTS
+# 08 - Modify ALLOWED_HOSTS
 
 ## Resources:
 * [Deploy a Django App to Heroku - Video - Pretty Printed](https://www.youtube.com/watch?v=GMbVzl_aLxM)
@@ -37,7 +37,7 @@
         0aa205e..8d5c94b  main -> main
         ```
 
-1. [Push to Heroku and Create Superuser](push_to_heroku_and_createsuperuser.md)
+1. [Push to Heroku and Create Superuser](09_push_to_heroku_and_createsuperuser.md)
 
 ## Links:
 [README.md](../README.md)

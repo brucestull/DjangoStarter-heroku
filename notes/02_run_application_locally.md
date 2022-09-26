@@ -1,4 +1,4 @@
-# Run Application Locally
+# 02 - Run Application Locally
 
 ## Resources:
 
@@ -189,8 +189,8 @@
     * http://localhost:8000/admin/doc/
     * http://localhost:8000/admin/doc/models/users.customuser/
 
-1. Proceed to [Create Heroku Application Server Instance](create_heroku_application_server_instance.md).
+1. Proceed to [Create Heroku Application Server Instance](03_create_heroku_application_server_instance.md).
 
 
-## Links:
+## Repository Links:
 [README.md](../README.md)

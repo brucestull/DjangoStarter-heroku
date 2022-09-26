@@ -1,4 +1,4 @@
-# Add Django SECRET_KEY to Config Vars
+# 06 - Add Django SECRET_KEY to Config Vars
 
 ## Resources:
 
@@ -33,7 +33,7 @@
 1. Click the "Add" button.
 ![07_click_add_button](https://user-images.githubusercontent.com/47562501/174795089-40708467-30fe-4d36-bf96-f09e5dcb3713.png)
 
-1. [Add Database Settings to Config Vars](add_database_settings_to_config_vars.md)
+1. [Add Database Settings to Config Vars](07_add_database_settings_to_config_vars.md)
 
 ## Links:
 [README.md](../README.md)

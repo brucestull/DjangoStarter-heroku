@@ -1,4 +1,4 @@
-# Create Repository from DjangoCustomUserStarter Template
+# 01 - Create Repository from DjangoCustomUserStarter Template
 
 ## Resources:
 
@@ -16,5 +16,5 @@
 1. Proceed to [Run Application Locally](02_run_application_locally.md).
 
 
-## Links:
+## Repository Links:
 [README.md](../README.md)

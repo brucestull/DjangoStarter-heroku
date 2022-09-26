@@ -1,4 +1,4 @@
-# Create Heroku Application Server Instance
+# 03 - Create Heroku Application Server Instance
 
 ## Resources:
 * [Deploy a Django Project on Heroku - PDX Code Guild - Class Otter](https://github.com/PdxCodeGuild/class_otter/blob/main/5%20Capstone/Heroku%20Deployment.md)
@@ -89,7 +89,7 @@
         * `git push` (for `origin`)
         * `git push heroku main` (for `heroku`)
 
-1. [Provision Database Server Instance](provision_database_server_instance.md)
+1. [Provision Database Server Instance](04_provision_database_server_instance.md)
 
 ## Links:
 [README.md](../README.md)
