@@ -41,8 +41,8 @@
         ```  
 ![09_take_note_of_database_settings](https://user-images.githubusercontent.com/47562501/174794541-1e2ef6b2-f4c6-43db-8c4e-76dd7b3f6666.png)
 
-1. [Add DJANGO_SETTINGS_MODULE to Config Vars](05_add_django_settings_module_to_config_vars.md)
+1. Proceed to [Add DJANGO_SETTINGS_MODULE to Config Vars](05_add_django_settings_module_to_config_vars.md)
 
 
-## Links:
+## Repository Links:
 [README.md](../README.md)

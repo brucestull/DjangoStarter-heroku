@@ -89,5 +89,5 @@
 
 1. Add your own functionality to the application.
 
-## Links:
+## Repository Links:
 [README.md](../README.md)

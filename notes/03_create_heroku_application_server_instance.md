@@ -89,7 +89,7 @@
         * `git push` (for `origin`)
         * `git push heroku main` (for `heroku`)
 
-1. [Provision Database Server Instance](04_provision_database_server_instance.md)
+1. Proceed to [Provision Database Server Instance](04_provision_database_server_instance.md)
 
-## Links:
+## Repository Links:
 [README.md](../README.md)

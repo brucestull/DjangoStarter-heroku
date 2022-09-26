@@ -61,5 +61,5 @@
     ```
 
 
-## Links:
+## Repository Links:
 [README.md](../README.md)

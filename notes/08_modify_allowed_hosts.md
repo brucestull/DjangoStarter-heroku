@@ -37,7 +37,7 @@
         0aa205e..8d5c94b  main -> main
         ```
 
-1. [Push to Heroku and Create Superuser](09_push_to_heroku_and_createsuperuser.md)
+1. Proceed to [Push to Heroku and Create Superuser](09_push_to_heroku_and_createsuperuser.md)
 
-## Links:
+## Repository Links:
 [README.md](../README.md)

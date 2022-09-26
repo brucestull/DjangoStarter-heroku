@@ -33,7 +33,7 @@
 1. Click the "Add" button.
 ![07_click_add_button](https://user-images.githubusercontent.com/47562501/174795089-40708467-30fe-4d36-bf96-f09e5dcb3713.png)
 
-1. [Add Database Settings to Config Vars](07_add_database_settings_to_config_vars.md)
+1. Proceed to [Add Database Settings to Config Vars](07_add_database_settings_to_config_vars.md)
 
-## Links:
+## Repository Links:
 [README.md](../README.md)

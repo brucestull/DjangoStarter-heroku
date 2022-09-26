@@ -25,7 +25,7 @@
     * Sample "Config Vars":  
 ![08_config_vars_summary](https://user-images.githubusercontent.com/47562501/174795613-37bd5eba-6d47-4eec-b4b8-e0f673978c20.png)
 
-1. [Modify ALLOWED_HOSTS](08_modify_allowed_hosts.md)
+1. Proceed to [Modify ALLOWED_HOSTS](08_modify_allowed_hosts.md)
 
-## Links:
+## Repository Links:
 [README.md](../README.md)
