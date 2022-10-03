@@ -18,6 +18,9 @@
 * User has [Heroku](https://www.heroku.com/) account.
 * User has [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#install-the-heroku-cli) installed.
 
+## **WARNING:**
+* This template has Django `SECRET_KEY` exposed in both development and production settings files. It is important to create your own separate `SECRET_KEY` for development and production and keep them out of the codebase. This template has `SECRET_KEY` exposed in order to get the user up and running quickly.
+
 ## Process:
 1. [Create Repository from DjangoCustomUserStarter Template](notes/01_create_repository_from_template.md)
 1. [Run Application Locally](notes/02_run_application_locally.md)
