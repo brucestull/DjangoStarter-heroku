@@ -6,6 +6,7 @@
     {% if user.is_authenticated %}
         Hi, {{ user.username | capfirst }}:
         <p><a href="{% url 'logout' %}">Log Out</a></p>
+        <p><a href="{% url 'edit_profile' user.id %}">Edit Profile</a></p>
         {% if user.is_staff %}
             <h2>Staff Links:</h2>
             <a
