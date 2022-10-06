@@ -1,9 +1,7 @@
 from django.urls import reverse_lazy
-from django.views.generic.edit import CreateView
-from django.views.generic.edit import UpdateView
+from django.views.generic.edit import CreateView, UpdateView
 
-from users.forms import CustomUserCreationForm
-from users.forms import CustomUserChangeForm
+from users.forms import CustomUserCreationForm, CustomUserChangeForm
 
 from users.models import CustomUser
 
