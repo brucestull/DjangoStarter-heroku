@@ -7,6 +7,8 @@
         Hi, {{ user.username | capfirst }}:
         <p><a href="{% url 'logout' %}">Log Out</a></p>
         <p><a href="{% url 'edit_profile' user.id %}">Edit Profile</a></p>
+        <p><a href="{% url 'password_change' %}">Password Change</a></p>
+        <p><a href="{% url 'password_reset' %}">Password Reset</a></p>
         {% if user.is_staff %}
             <h2>Staff Links:</h2>
             <a
