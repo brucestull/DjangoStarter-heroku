@@ -46,7 +46,7 @@
         remote: Running release command...
         remote:
         remote: Operations to perform:
-        remote:   Apply all migrations: users
+        remote:   Apply all migrations: accounts
         remote: Running migrations:
         remote:   Applying contenttypes.0001_initial... OK
         remote:   Applying contenttypes.0002_remove_content_type_name... OK
@@ -62,9 +62,9 @@
         remote:   Applying auth.0010_alter_group_name_max_length... OK
         remote:   Applying auth.0011_update_proxy_permissions... OK
         remote:   Applying auth.0012_alter_user_first_name_max_length... OK
-        remote:   Applying users.0001_initial... OK
+        remote:   Applying accounts.0001_initial... OK
         remote: Operations to perform:
-        remote:   Apply all migrations: admin, auth, contenttypes, sessions, users
+        remote:   Apply all migrations: admin, auth, contenttypes, sessions, accounts
         remote: Running migrations:
         remote:   Applying admin.0001_initial... OK
         remote:   Applying admin.0002_logentry_remove_auto_add... OK

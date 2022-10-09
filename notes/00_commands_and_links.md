@@ -54,7 +54,7 @@
 
 ## Development server web links:
 * Create user:
-    * http://localhost:8000/users/signup/
+    * http://localhost:8000/accounts/signup/
 * Server Root:
     * http://localhost:8000/
 * Django Admin:

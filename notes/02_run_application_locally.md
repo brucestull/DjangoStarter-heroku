@@ -105,13 +105,13 @@
         Path               : C:\Users\Bruce\.virtualenvs\totally-new-heroku-app-name-D8cdteJM\Scripts\python.exe
         ```
 
-1. Perform `users` application migration. It is important to do the `users` app migration before the rest of the app migrations since we are using a `CustomUser` model which [inherits](https://www.w3schools.com/python/python_inheritance.asp) from `AbstractUser`:  
-    `python manage.py migrate users`
+1. Perform `accounts` application migration. It is important to do the `accounts` app migration before the rest of the app migrations since we are using a `CustomUser` model which [inherits](https://www.w3schools.com/python/python_inheritance.asp) from `AbstractUser`:  
+    `python manage.py migrate accounts`
     * Sample output:
         ```
-        PS C:\Users\Bruce\Programming\totally-new-heroku-app-name> python manage.py migrate users
+        PS C:\Users\Bruce\Programming\totally-new-heroku-app-name> python manage.py migrate accounts
         Operations to perform:
-        Apply all migrations: users
+        Apply all migrations: accounts
         Running migrations:
         Applying contenttypes.0001_initial... OK
         Applying contenttypes.0002_remove_content_type_name... OK
@@ -127,7 +127,7 @@
         Applying auth.0010_alter_group_name_max_length... OK
         Applying auth.0011_update_proxy_permissions... OK
         Applying auth.0012_alter_user_first_name_max_length... OK
-        Applying users.0001_initial... OK
+        Applying accounts.0001_initial... OK
         PS C:\Users\Bruce\Programming\totally-new-heroku-app-name>
         ```
 
@@ -137,7 +137,7 @@
         ```
         PS C:\Users\Bruce\Programming\totally-new-heroku-app-name> python manage.py migrate
         Operations to perform:
-        Apply all migrations: admin, auth, contenttypes, sessions, users
+        Apply all migrations: admin, auth, contenttypes, sessions, accounts
         Running migrations:
         Applying admin.0001_initial... OK
         Applying admin.0002_logentry_remove_auto_add... OK
@@ -187,7 +187,7 @@
 
 1. Investigate the Django Admin Documentation features:
     * http://localhost:8000/admin/doc/
-    * http://localhost:8000/admin/doc/models/users.customuser/
+    * http://localhost:8000/admin/doc/models/accounts.customuser/
 
 1. Proceed to [Create Heroku Application Server Instance](03_create_heroku_application_server_instance.md).
 
