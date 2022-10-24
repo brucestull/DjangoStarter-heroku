@@ -17,7 +17,7 @@ DATABASES = {
 
 
 # Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
+# See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # Create your own `SECRET_KEY` here for use in Development.
 # This one is provided here for user to get the DjangoCustomUserStarter up and running quickly.
