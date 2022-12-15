@@ -7,10 +7,10 @@
 ## Process:
 
 1. Open dashboard for the application we created:  
-![01_heroku_application_dashboard](https://user-images.githubusercontent.com/47562501/174793985-c1be51d6-88ca-4154-923a-f3f7acf2a6b4.png)
+![01_open_dashboard](https://user-images.githubusercontent.com/47562501/207199802-0da9bb83-1f5a-41cd-99c6-23e0d8bb664e.png)
 
 1. Click the "Configure Add-ons" links:  
-![02_click_configure_add_ons](https://user-images.githubusercontent.com/47562501/174794334-bb31b7b3-3681-4d11-bfe6-ce8e9b030612.png)
+![02_click_configure_add_ons](https://user-images.githubusercontent.com/47562501/207199819-bea49fb1-f65d-4a43-b5b2-54dbb9c53f82.png)
 
 1. Start search for "heroku postgres":  
 ![03_search_for_heroku_postgres](https://user-images.githubusercontent.com/47562501/174794371-33167ff3-4bf7-4e17-b551-857125a9f088.png)

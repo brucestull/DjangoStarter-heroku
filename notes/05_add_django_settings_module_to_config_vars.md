@@ -9,7 +9,7 @@
         * https://dashboard.heroku.com/apps/totally-new-heroku-app-name
 
 1. Open the "Settings" tab:
-![01_select_settings_tab](https://user-images.githubusercontent.com/47562501/174794887-19f35b84-3729-40f4-b8b5-9284924dfe72.png)
+![02_open_the_settings_tab](https://user-images.githubusercontent.com/47562501/207200024-a64261db-6def-47a9-aa7d-8a3dec7ffe3c.png)
 
 1. Click "Reveal Config Vars":
 ![02_click_reveal_config_vars_button](https://user-images.githubusercontent.com/47562501/174794919-a0037f90-da9d-4878-8f5a-a1191d084f8c.png)
