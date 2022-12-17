@@ -39,5 +39,4 @@
 * DEV and PROD settings: [Configuring Django Settings for Production - thinkster.io](https://thinkster.io/tutorials/configuring-django-settings-for-production)
 
 ## Links to this project's pages:
-* DjangoCustomUserStarter [Project Board](https://github.com/brucestull/DjangoCustomUserStarter/projects/1)
 * DjangoCustomUserStarter [Repository](https://github.com/brucestull/DjangoCustomUserStarter)
