@@ -45,4 +45,4 @@
 
 ## Links to this project's pages
 
-* DjangoCustomUserStarter [Repository](https://github.com/FlynntKnappstull/DjangoCustomUserStarter)
+* DjangoCustomUserStarter [Repository](https://github.com/brucestull/DjangoCustomUserStarter)
