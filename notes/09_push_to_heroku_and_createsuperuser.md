@@ -1,14 +1,15 @@
 # 09 - Push to Heroku and Create Superuser
 
-## Resources:
+## Resources
 
-## Process:
+## Process
 
 1. Git `push` to `heroku`:  
     `git push heroku main`
     * Sample output:
-        ```
-        PS C:\Users\Bruce\Programming\my-local-repository> git push heroku main
+
+        ```console
+        PS C:\Users\FlynntKnapp\Programming\my-local-repository> git push heroku main
         Enumerating objects: 412, done.
         Counting objects: 100% (412/412), done.
         Delta compression using up to 8 threads
@@ -85,9 +86,10 @@
 
 1. Log in to deployed application:
     * Sample application address:  
-        * https://totally-new-heroku-app-name.herokuapp.com/
+        * <https://totally-new-heroku-app-name.herokuapp.com/>
 
 1. Add your own functionality to the application.
 
-## Repository Links:
+## Repository Links
+
 [README.md](../README.md)

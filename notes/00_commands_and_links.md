@@ -1,21 +1,24 @@
 # Useful Commands and Links
 
-## Commands:
+## Commands
 
-### `pipenv`:
+### `pipenv`
+
 * `pipenv install`
-    * Create a `pipenv` virtual environment for the current directory.
+  * Create a `pipenv` virtual environment for the current directory.
 * `pipenv install django==4.0`
 * `pipenv install django==4.1`
 * `pipenv install docutils==0.19`
 * `pipenv shell`
 * `exit`
-    * Exit the current `pipenv` virtual environment.
+  * Exit the current `pipenv` virtual environment.
 
-### `pip`:
+### `pip`
+
 * `pip list`
 
-### Django:
+### Django
+
 * `django-admin startproject the_project .`
 * `python .\manage.py startapp the_app`
 * `python .\manage.py runserver`
@@ -25,46 +28,54 @@
 * `python .\manage.py createsuperuser`
 * `python .\manage.py createsuperuser --email admin@email.app --username admin`
 
-### Django Create `SECRET_KEY`:
+### Django Create `SECRET_KEY`
+
 * `python manage.py shell`
 * `from django.core.management.utils import get_random_secret_key`
 * `print(get_random_secret_key())`
 
-### Heroku:
+### Heroku
+
 * Can't have leading `.\` when running command with `heroku run`:
-    * `heroku run python manage.py createsuperuser --email admin@email.app --username admin`
+  * `heroku run python manage.py createsuperuser --email admin@email.app --username admin`
 * `heroku login`
 * `heroku create dezzi-diner`
 
-### PowerShell:
+### PowerShell
+
 * `Get-Command python | Format-List *`
 
-### Misc:
+### Misc
+
 * `tree /f /a`
 
-### Git:
+### Git
+
 * `git remote -v`
 
-## Production deployment links:
+## Production deployment links
+
 * Dashboard:
 * Server Root:
 * Create user:
 * Django Admin:
 * Django Admin Documentation:
 
-## Development server web links:
-* Create user:
-    * http://localhost:8000/accounts/signup/
-* Server Root:
-    * http://localhost:8000/
-* Django Admin:
-    * http://localhost:8000/admin/
-* Django Admin Documentation:
-    * http://localhost:8000/admin/doc/
-    * http://localhost:8000/admin/doc/tags/
-    * http://localhost:8000/admin/doc/filters/
-    * http://localhost:8000/admin/doc/models/
-    * http://localhost:8000/admin/doc/models/auth.user/
+## Development server web links
 
-## Repository Links:
+* Create user:
+  * <http://localhost:8000/accounts/signup/>
+* Server Root:
+  * <http://localhost:8000/>
+* Django Admin:
+  * <http://localhost:8000/admin/>
+* Django Admin Documentation:
+  * <http://localhost:8000/admin/doc/>
+  * <http://localhost:8000/admin/doc/tags/>
+  * <http://localhost:8000/admin/doc/filters/>
+  * <http://localhost:8000/admin/doc/models/>
+  * <http://localhost:8000/admin/doc/models/auth.user/>
+
+## Repository Links
+
 * Repository [`README.md`](../README.md).

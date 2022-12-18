@@ -1,23 +1,24 @@
 # 06 - Add Django SECRET_KEY to Config Vars
 
-## Resources:
+## Resources
 
-## Process:
+## Process
 
 1. Next config var is `SECRET_KEY`. We will generate this using Django shell.
     * In terminal session in root of repository, create a key and be prepared to copy it to Heroku application settings "Config Vars":
-    
+
     1. Start Django shell:  
     `python manage.py shell`
-    
+
     1. Import `get_random_secret_key`:  
     `from django.core.management.utils import get_random_secret_key`
-    
+
     1. Use `get_random_secret_key` to get a new key:  
     `print(get_random_secret_key())`
     * Sample output:
-        ```
-        PS C:\Users\Bruce\Programming\my-local-repository> python .\manage.py shell
+
+        ```console
+        PS C:\Users\FlynntKnapp\Programming\my-local-repository> python .\manage.py shell
         Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)] on win32
         Type "help", "copyright", "credits" or "license" for more information.
         (InteractiveConsole)
@@ -35,5 +36,6 @@
 
 1. Proceed to [Add Database Settings to Config Vars](07_add_database_settings_to_config_vars.md)
 
-## Repository Links:
+## Repository Links
+
 [README.md](../README.md)

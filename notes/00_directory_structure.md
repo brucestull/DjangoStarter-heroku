@@ -1,8 +1,9 @@
 # Project Directory Structure
 
 * `tree /f /a`:  
-    ```
-    PS C:\Users\Bruce\Programming\DjangoCustomUserStarter> tree /f /a
+
+    ```console
+    PS C:\Users\FlynntKnapp\Programming\DjangoCustomUserStarter> tree /f /a
     Folder PATH listing for volume OS
     Volume serial number is CC00-DD12
     C:.
@@ -60,9 +61,9 @@
                 0001_initial.py
                 __init__.py
 
-    PS C:\Users\Bruce\Programming\DjangoCustomUserStarter>
+    PS C:\Users\FlynntKnapp\Programming\DjangoCustomUserStarter>
     ```
 
+## Repository Links
 
-## Repository Links:
 [README.md](../README.md)

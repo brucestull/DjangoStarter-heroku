@@ -1,10 +1,11 @@
 # 04 - Provision Database Server Instance
 
-## Resources:
-* [Heroku](https://www.heroku.com/)
-* https://dashboard.heroku.com/
+## Resources
 
-## Process:
+* [Heroku](https://www.heroku.com/)
+* <https://dashboard.heroku.com/>
+
+## Process
 
 1. Open dashboard for the application we created:  
 ![01_open_dashboard](https://user-images.githubusercontent.com/47562501/207199802-0da9bb83-1f5a-41cd-99c6-23e0d8bb664e.png)
@@ -32,17 +33,19 @@
 
 1. Take note of database server settings, we will need these values later:
     * Sample values:
-        ```
+
+        ```console
         Host        ec2-52-71-23-11.compute-1.amazonaws.com
         Database    d12en8ankbfql6
         User        fnsrzllkwjdrrf
         Port        5432
         Password    8c7ff88eb1c45aeccb61bf68d7540db7710e3c8adce41f8334b8f0f51aa534b4
         ```  
+
 ![09_take_note_of_database_settings](https://user-images.githubusercontent.com/47562501/174794541-1e2ef6b2-f4c6-43db-8c4e-76dd7b3f6666.png)
 
 1. Proceed to [Add DJANGO_SETTINGS_MODULE to Config Vars](05_add_django_settings_module_to_config_vars.md)
 
+## Repository Links
 
-## Repository Links:
 [README.md](../README.md)
