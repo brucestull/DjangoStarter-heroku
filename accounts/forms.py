@@ -18,5 +18,12 @@ class CustomUserChangeForm(UserChangeForm):
         fields = (
             'username',
             'email',
-            'is_superuser',
+
+            # 'is_staff',   # This field should only be available to
+            # some adminstrative role. There would be some sort of page
+            # where the andminstrative role can change the role of a user.
+
+            # 'is_superuser',   # This field should only be available to
+            # some adminstrative role. There would be some sort of page
+            # where the andminstrative role can change the role of a user.
         )
