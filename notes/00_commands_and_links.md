@@ -29,13 +29,13 @@
 ### Django
 
 * `django-admin startproject the_project .`
-* `python .\manage.py startapp the_app`
-* `python .\manage.py runserver`
+* `python .manage.py startapp the_app`
+* `python .manage.py runserver`
 * `<Ctrl+C>`
-* `python .\manage.py makemigrations`
-* `python .\manage.py migrate`
-* `python .\manage.py createsuperuser`
-* `python .\manage.py createsuperuser --email admin@email.app --username admin`
+* `python .manage.py makemigrations`
+* `python .manage.py migrate`
+* `python .manage.py createsuperuser`
+* `python .manage.py createsuperuser --email admin@email.app --username admin`
 
 ### Django Create `SECRET_KEY`
 
