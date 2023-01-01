@@ -27,7 +27,7 @@
 
 ## Process
 
-1. [Create Repository from DjangoCustomUserStarter Template](notes/01_create_repository_from_template.md)
+1. [Create Repository from DjangoCustomUserStarter-heroku Template](notes/01_create_repository_from_template.md)
 1. [Run Application Locally](notes/02_run_application_locally.md)
 1. [Create Heroku Application Server Instance](notes/03_create_heroku_application_server_instance.md)
 1. [Provision Database Server Instance](notes/04_provision_database_server_instance.md)
@@ -45,4 +45,4 @@
 
 ## Links to this project's pages
 
-* DjangoCustomUserStarter [Repository](https://github.com/brucestull/DjangoCustomUserStarter)
+* [DjangoCustomUserStarter-heroku Repository](https://github.com/brucestull/DjangoCustomUserStarter-heroku)

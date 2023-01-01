@@ -6,9 +6,9 @@
 
 1. Use GitHub 'Template' feature by using one of the following:
     * Use `generate` endpoint:
-        1. <https://github.com/FlynntKnappstull/DjangoCustomUserStarter/generate>
+        1. <https://github.com/brucestull/DjangoCustomUserStarter-heroku/generate>
     * Visit repository URL and click the `Use this template` button:
-        1. <https://github.com/FlynntKnappstull/DjangoCustomUserStarter>
+        1. <https://github.com/brucestull/DjangoCustomUserStarter-heroku>
         1. Click `Use this template` button.
 
 1. Follow dialog to create your own repository.
