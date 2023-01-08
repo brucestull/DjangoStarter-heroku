@@ -4,7 +4,7 @@
 
 {% block content %}
     {% if user.is_authenticated %}
-        Hi, {{ user.username | capfirst }}:
+        Greetings, {{ user.username | capfirst }}!
         <p><a href="{% url 'logout' %}">Log Out</a></p>
         <p><a href="{% url 'edit_profile' user.id %}">Edit Profile</a></p>
         <p><a href="{% url 'password_change' %}">Password Change</a></p>
@@ -19,8 +19,10 @@
             </a><br>
         {% endif %}
     {% else %}
-        <p>You are not logged in</p>
-        <a href="{% url 'login' %}">Log In</a> |
+        <p>We are not sure who you are, you are welcome to do one of the following:</p>
+        <a href="{% url 'login' %}">Log In</a>
+        <br>
         <a href="{% url 'signup' %}">Sign Up</a>
+        <br>
     {% endif %}
 {% endblock %}
