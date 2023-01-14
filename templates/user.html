@@ -1,0 +1,14 @@
+<div>
+    <a href="{% url 'home' %}">Home</a>
+    {% if user.is_authenticated %}
+        <span>Greetings, {{ user.username | capfirst }}!</span>
+        <a href="{% url 'logout' %}">Log Out</a>
+        <a href="{% url 'edit_profile' user.id %}">Edit Profile</a>
+        <a href="{% url 'password_change' %}">Password Change</a>
+        <a href="{% url 'password_reset' %}">Password Reset</a>
+    {% else %}
+        <p>We are not sure who you are, you are welcome to do one of the following:</p>
+        <a href="{% url 'login' %}">Log In</a>
+        <a href="{% url 'signup' %}">Sign Up</a>
+    {% endif %}
+</div>

@@ -1,24 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title>{% block title %}DjangoCustomUserStarter - Base{% endblock %}</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}{% endblock %}</title>
     </head>
     <body>
         <main>
-            <a
-                href="https://github.com/brucestull/DjangoCustomUserStarter"
-                target="_blank"
-                >
-                DjangoCustomUserStarter Git Repository
-            </a><br>
-            <a
-                href="/"
-                >
-                Home
-            </a><br>
-            {% block content %}
-            {% endblock %}
+            <main>
+                {% if user.is_staff %}
+                    {% include 'staff.html' %}
+                {% endif %}
+    
+                {% include 'user.html' %}
+    
+                {% block content %}
+                {% endblock content %}
         </main>
     </body>
 </html>
