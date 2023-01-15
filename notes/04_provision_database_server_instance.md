@@ -20,7 +20,7 @@
 ![04_click_heroku_postgres_item](https://user-images.githubusercontent.com/47562501/174794404-cade8c58-62fe-408c-af7f-b9b90aa1f127.png)
 
 1. Check order form and click "Submit Order Form" button:  
-![05_check_order_form_and_click_submit_order_form_button](https://user-images.githubusercontent.com/47562501/174794435-75f3bddb-c4a0-431d-8398-bf77ee66db2a.png)
+![05_check_order_form_and_click_submit_order_form_button](https://user-images.githubusercontent.com/47562501/212556324-035f9caa-ad94-4727-b080-56cfab14cd48.png)
 
 1. Click "Heroku Postgres" line item link:  
 ![06_select_heroku_postgres_line_item_link](https://user-images.githubusercontent.com/47562501/174794457-fff0a237-854c-401f-abca-7335f96385b8.png)
