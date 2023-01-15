@@ -13,9 +13,9 @@
                     href="https://github.com/brucestull/DjangoCustomUserStarter-heroku"
                     target="_blank"
                     >
-                    DjangoCustomUserStarter Git Repository
+                    DjangoCustomUserStarter GitHub Repository
                 </a>
-                        {% if user.is_staff %}
+                {% if user.is_staff %}
                     {% include 'staff.html' %}
                 {% endif %}
     

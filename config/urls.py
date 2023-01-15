@@ -18,8 +18,17 @@ from django.contrib import admin
 from django.urls import path, include
 from django.views.generic.base import TemplateView
 
+from config.settings.common import THE_SITE_NAME
+
 urlpatterns = [
-    path('', TemplateView.as_view(template_name="home.html"), name='home'),
+    path(
+        '',
+        TemplateView.as_view(
+            template_name="home.html",
+            extra_context={'the_site_name': THE_SITE_NAME},
+        ),
+        name='home',
+    ),
 
     path('admin/doc/', include('django.contrib.admindocs.urls')),
     path('admin/', admin.site.urls),
