@@ -11,7 +11,6 @@ class CustomLoginView(LoginView):
     """
     Override the default login view. This will allow us to add the site name to the context and then display it on the page.
     """
-    # template_name = 'registration/login.html'
 
     def get_context_data(self, **kwargs):
         """
@@ -20,12 +19,6 @@ class CustomLoginView(LoginView):
         context = super().get_context_data(**kwargs)
         context['the_site_name'] = THE_SITE_NAME
         return context
-
-    # def get_success_url(self):
-    #     """
-    #     Redirect to the home page.
-    #     """
-    #     return reverse_lazy('home')
 
 
 class SignUpView(CreateView):
