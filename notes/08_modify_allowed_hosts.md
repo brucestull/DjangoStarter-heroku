@@ -6,7 +6,7 @@
 
 ## Process
 
-1. Edit `ALLOWED_HOSTS` property in `production.py` ([production.py](../my_current_project/settings/production.py)) to include the heroku application root domain:  
+1. Edit `ALLOWED_HOSTS` property in `production.py` ([production.py](../config/settings/production.py)) to include the heroku application root domain:  
     `ALLOWED_HOSTS = ['totally-new-heroku-app-name.herokuapp.com']`
 
 1. Git `add`, `commit`, and `push` to `origin` (the repository created earlier):  
@@ -20,7 +20,7 @@
         Changes not staged for commit:
         (use "git add <file>..." to update what will be committed)
         (use "git restore <file>..." to discard changes in working directory)
-                modified:   my_current_project/settings/production.py
+                modified:   config/settings/production.py
 
         no changes added to commit (use "git add" and/or "git commit -a")
         PS C:\Users\FlynntKnapp\Programming\my-local-repository> git add .

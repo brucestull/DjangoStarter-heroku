@@ -13,7 +13,7 @@
 
 ## Assumptions
 
-* User has functioning [Python](https://www.python.org/downloads/) 3.10 installation.
+* User has functioning [Python](https://www.python.org/downloads/) 3.11 installation.
 * User has functioning [pipenv](https://pypi.org/project/pipenv/) installation.
 * User has functioning [git](https://git-scm.com/downloads) installation.
 * User is familiar with how to use terminal commands.

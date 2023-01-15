@@ -1,4 +1,4 @@
-from my_current_project.settings.common import *
+from config.settings.common import *
 import os
 
 

@@ -15,7 +15,7 @@
     |   Procfile
     |   README.md
     |
-    +---my_current_project
+    +---config
     |   |   asgi.py
     |   |   urls.py
     |   |   wsgi.py

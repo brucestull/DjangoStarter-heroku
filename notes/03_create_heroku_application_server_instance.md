@@ -31,7 +31,7 @@
 
         Mode                 LastWriteTime         Length Name
         ----                 -------------         ------ ----
-        d----          2022-08-19    09:30                my_current_project
+        d----          2022-08-19    09:30                config
         d----          2022-08-19    09:30                notes
         d----          2022-08-19    09:30                templates
         d----          2022-08-19    09:30                accounts

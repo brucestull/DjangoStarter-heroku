@@ -182,7 +182,7 @@
 
         System check identified no issues (0 silenced).
         August 19, 2022 - 10:03:05
-        Django version 4.0, using settings 'my_current_project.settings.development'
+        Django version 4.0, using settings 'config.settings.development'
         Starting development server at http://127.0.0.1:8000/
         Quit the server with CTRL-BREAK.
         ```

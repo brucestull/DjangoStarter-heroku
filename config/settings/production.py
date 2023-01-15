@@ -1,4 +1,4 @@
-from my_current_project.settings.common import *
+from config.settings.common import *
 
 import os
 
@@ -6,7 +6,7 @@ import os
 DEBUG = False
 
 
-ALLOWED_HOSTS = ['flynnt-knapp-test-app.herokuapp.com']
+ALLOWED_HOSTS = ['flynnt-knapp-djangostarter.herokuapp.com']
 
 
 MIDDLEWARE = MIDDLEWARE + ['whitenoise.middleware.WhiteNoiseMiddleware']
