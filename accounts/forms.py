@@ -8,7 +8,9 @@ class CustomUserCreationForm(UserCreationForm):
         model = CustomUser
         fields = (
             'username',
-            'email'
+            'email',
+            'first_name',
+            'last_name',
         )
 
 class CustomUserChangeForm(UserChangeForm):
@@ -18,6 +20,8 @@ class CustomUserChangeForm(UserChangeForm):
         fields = (
             'username',
             'email',
+            'first_name',
+            'last_name',
 
             # 'is_staff',   # This field should only be available to
             # some adminstrative role. There would be some sort of page
