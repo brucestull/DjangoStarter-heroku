@@ -8,21 +8,20 @@
     </head>
     <body>
         <main>
-            <main>
-                <a
-                    href="https://github.com/brucestull/DjangoCustomUserStarter-heroku"
-                    target="_blank"
-                    >
-                    DjangoCustomUserStarter GitHub Repository
-                </a>
-                {% if user.is_staff %}
-                    {% include 'staff.html' %}
-                {% endif %}
-    
-                {% include 'user.html' %}
-    
-                {% block content %}
-                {% endblock content %}
+            <a
+                href="https://github.com/brucestull/DjangoCustomUserStarter-heroku"
+                target="_blank"
+                >
+                DjangoCustomUserStarter GitHub Repository
+            </a>
+            {% if user.is_staff %}
+                {% include 'staff.html' %}
+            {% endif %}
+
+            {% include 'user.html' %}
+
+            {% block content %}
+            {% endblock content %}
         </main>
     </body>
 </html>
