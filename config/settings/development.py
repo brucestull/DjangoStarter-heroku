@@ -25,13 +25,12 @@ DATABASES = {
         # You can set a `SECRET_KEY` on you development computer system.
         # Create a specific `SECRET_KEY` for development and use it in development only.
         # Create a specific `SECRET_KEY` for production and use it in production only.
-SECRET_KEY = "3)hq&x!awji5*(iw3ovzji^92as-nw57(m@7h#x^-c2wzu%qam"
-# **OR**
-# SECRET_KEY = os.environ.get('SECRET_KEY')
+
+SECRET_KEY = os.environ.get('SECRET_KEY', "mm8cx0al6wo$$0hhv3&eevzsst9dbw&(5p$#9k(1rx%e@j+=$l")
 
 # To create a new `SECRET_KEY`:
 """
-    python .\manage.py shell
+    python manage.py shell
     from django.core.management.utils import get_random_secret_key
     print(get_random_secret_key())
 """

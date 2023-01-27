@@ -9,7 +9,6 @@
 1. `python manage.py migrate accounts`
 1. `python manage.py migrate`
 1. `python manage.py createsuperuser --email admin@email.app --username admin`
-1. `python manage.py createsuperuser --email FlynntKnapp@email.app --username FlynntKnapp`
 
 ### `pipenv`
 
@@ -28,14 +27,15 @@
 
 ### Django
 
-* `django-admin startproject the_project .`
-* `python manage.py startapp the_app`
+* `django-admin startproject config .`
+* `python manage.py startapp accounts`
 * `python manage.py runserver`
 * `<Ctrl+C>`
 * `python manage.py makemigrations`
 * `python manage.py migrate`
 * `python manage.py createsuperuser`
 * `python manage.py createsuperuser --email admin@email.app --username admin`
+* `python manage.py createsuperuser --email FlynntKnapp@email.app --username FlynntKnapp`
 
 ### Django Create `SECRET_KEY`
 
@@ -47,6 +47,7 @@
 
 * Can't have leading `.\` when running command with `heroku run`:
   * `heroku run python manage.py createsuperuser --email admin@email.app --username admin`
+  * `heroku run python manage.py createsuperuser --email FlynntKnapp@email.app --username FlynntKnapp`
 * `heroku login`
 * `heroku create dezzi-diner`
 

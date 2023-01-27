@@ -33,7 +33,7 @@ INSTALLED_APPS = [
 
     'django.contrib.admindocs',
 
-    'accounts.apps.UsersConfig',
+    'accounts.apps.AccountsConfig',
 ]
 
 MIDDLEWARE = [
