@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 
-{% block title %}{{ the_site_name }} - Sign Up{% endblock %}
+{% block title %}
+    {{ the_site_name }}
+    -
+    Sign Up
+{% endblock title %}
 
 {% block content %}
     <h2>Sign Up</h2>
@@ -9,4 +13,4 @@
         {{ form.as_p }}
         <button type="submit">Sign Up</button>
     </form>
-{% endblock %}
+{% endblock content %}

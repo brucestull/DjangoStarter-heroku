@@ -24,16 +24,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 # Application definition
 
 INSTALLED_APPS = [
+    # List `accounts.apps.AccountsConfig` app first so the templates of
+    # that app override the default ones in `django.contrib.admin`.
+    'accounts.apps.AccountsConfig',
     'django.contrib.admin',
+
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
     'django.contrib.admindocs',
-
-    'accounts.apps.AccountsConfig',
 ]
 
 MIDDLEWARE = [
