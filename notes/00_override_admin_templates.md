@@ -23,8 +23,8 @@
     )
 
 * Browser Image:
-  ![password_change_form_django_admin_default](https://user-images.githubusercontent.com/47562501/215713560-94d1d4ee-2802-4235-9871-fc7a981d4eca.png)
 
+  ![password_change_form_django_admin_default](https://user-images.githubusercontent.com/47562501/215713560-94d1d4ee-2802-4235-9871-fc7a981d4eca.png)
 
 ## Override admin templates
 
@@ -47,4 +47,5 @@
     )
 
 * Browser Image:
+
   ![password_change_form_custom](https://user-images.githubusercontent.com/47562501/215713723-523a1d31-5209-4961-9b48-61087bbec0e6.png)
