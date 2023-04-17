@@ -6,6 +6,8 @@
         <br>
         <a href="{% url 'logout' %}">Log Out</a>
         |
+        <a href="{% url 'detail' user.id %}">User Information</a>
+        |
         <a href="{% url 'edit' user.id %}">Edit User Information</a>
         |
         <a href="{% url 'password_change' %}">Password Change</a>
