@@ -2,6 +2,7 @@ from django.urls import reverse_lazy
 from django.views.generic.edit import CreateView, UpdateView
 from django.views.generic.detail import DetailView
 from django.contrib.auth.views import LoginView
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 
 from accounts.forms import CustomUserCreationForm, CustomUserChangeForm
 from accounts.models import CustomUser
@@ -39,7 +40,7 @@ class SignUpView(CreateView):
         return context
 
 
-class UserUpdateView(UpdateView):
+class UserUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     """
     View for user to update an existing account.
     """
@@ -47,6 +48,12 @@ class UserUpdateView(UpdateView):
     form_class = CustomUserChangeForm
     success_url = reverse_lazy('login')
     template_name ='registration/update.html'
+
+    def test_func(self):
+        """
+        Only allow the user to edit their own account.
+        """
+        return self.request.user == self.get_object()
 
     def get_context_data(self, **kwargs):
         """
@@ -57,13 +64,19 @@ class UserUpdateView(UpdateView):
         return context
 
 
-class UserDetailView(DetailView):
+class UserDetailView(LoginRequiredMixin, UserPassesTestMixin, DetailView):
     """
     View for user to view their account details.
 
     We are only specifying the `model` here because we are using the default template name that is created by Django.
     """
     model = CustomUser
+
+    def test_func(self):
+        """
+        Only allow the user to view their own account details.
+        """
+        return self.request.user == self.get_object()
 
     def get_context_data(self, **kwargs):
         """
