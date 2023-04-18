@@ -46,6 +46,10 @@
 ## Other Documentation
 
 * [Pipenv & Virtual Environments](https://pipenv-fork.readthedocs.io/en/latest/install.html)
+  * User installation:
+    * `pip install --user pipenv`
+  * Global installation:
+    * `pip install pipenv`
 
 ## Links to this project's pages
 
