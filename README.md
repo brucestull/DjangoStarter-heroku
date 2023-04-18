@@ -43,6 +43,10 @@
 * Docutils: [The Django admin documentation generator - docs.djangoproject.com](https://docs.djangoproject.com/en/4.0/ref/contrib/admin/admindocs/)
 * DEV and PROD settings: [Configuring Django Settings for Production - thinkster.io](https://thinkster.io/tutorials/configuring-django-settings-for-production)
 
+## Other Documentation
+
+* [Pipenv & Virtual Environments](https://pipenv-fork.readthedocs.io/en/latest/install.html)
+
 ## Links to this project's pages
 
 * [DjangoCustomUserStarter-heroku Repository](https://github.com/brucestull/DjangoCustomUserStarter-heroku)

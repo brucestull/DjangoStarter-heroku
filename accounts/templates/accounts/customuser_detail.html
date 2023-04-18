@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {% if the_site_name %}
+        {{ the_site_name }}
+        -
+    {% endif %}
+    {{ page_title }}
+{% endblock title %}
+
+{% block content %}
+<br>
+{{ customuser.id }}
+<br>
+{{ customuser.username }}
+<br>
+{{ customuser.email }}
+<br>
+{{ customuser.first_name }}
+<br>
+{{ customuser.last_name }}
+<br>
+{{ customuser.is_active }}
+<br>
+{{ customuser.is_staff }}
+<br>
+{{ customuser.is_superuser }}
+<br>
+{{ customuser.last_login }}
+<br>
+{{ customuser.date_joined }}
+<br>
+{% endblock content %}
