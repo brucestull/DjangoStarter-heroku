@@ -23,7 +23,7 @@
 ## **WARNING:**
 
 * [Deployment checklist - docs.djangoproject.com](https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/)
-  * This template has Django `SECRET_KEY` exposed in both development and production settings files. It is important to create your own separate `SECRET_KEY` for development and production and keep them out of the codebase. This template has `SECRET_KEY` exposed in order to get the user up and running quickly.
+  * This template has Django `SECRET_KEY` exposed in development settings files. It is important to create your own separate `SECRET_KEY` for development and production and keep them out of the codebase. This template has `SECRET_KEY` exposed in order to get the user up and running quickly.
 
 ## Process
 
