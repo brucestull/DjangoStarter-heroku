@@ -23,7 +23,7 @@ class CustomLoginView(LoginView):
         return context
 
 
-class SignUpView(CreateView):
+class CustomUserSignUpView(CreateView):
     """
     View for user to create a new account.
     """
@@ -40,7 +40,7 @@ class SignUpView(CreateView):
         return context
 
 
-class UserUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+class CustomUserUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     """
     View for user to update an existing account.
     """
@@ -64,7 +64,7 @@ class UserUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         return context
 
 
-class UserDetailView(LoginRequiredMixin, UserPassesTestMixin, DetailView):
+class CustomUserDetailView(LoginRequiredMixin, UserPassesTestMixin, DetailView):
     """
     View for user to view their account details.
 
