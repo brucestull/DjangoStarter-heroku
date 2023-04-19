@@ -9,7 +9,6 @@
 * Separate DEV and PROD settings.
 * Pipfile included.
 * Heroku Procfile included.
-* [Project Directory Structure](notes/00_directory_structure.md)
 
 ## Assumptions
 
