@@ -26,7 +26,7 @@ class CustomUserSignUpView(CreateView):
         return context
 
 
-class CustomLoginView(LoginView):
+class CustomUserLoginView(LoginView):
     """
     Override the default login view. This will allow us to add the site name to the context and then display it on the page.
     """

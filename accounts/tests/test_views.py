@@ -4,13 +4,13 @@ from django.urls import reverse
 from accounts.models import CustomUser
 from accounts.forms import CustomUserCreationForm, CustomUserChangeForm
 
-A_TEST_USERNAME = "ACustomUser"
-A_TEST_PASSWORD = "a_test_password"
-A_TEST_FIRST_NAME = "A"
+TEST_USERNAME_ONE = 'OneUser'
+TEST_PASSWORD_ONE = 'one_test_password'
+TEST_FIRST_NAME_ONE = 'One'
 
-ANOTHER_TEST_USERNAME = "AnotherCustomUser"
-ANOTHER_TEST_PASSWORD = "another_test_password"
-ANOTHER_TEST_FIRST_NAME = "Another"
+TEST_USERNAME_TWO = 'TwoUser'
+TEST_PASSWORD_TWO = 'two_test_password'
+TEST_FIRST_NAME_TWO = 'Two'
 
 THE_SITE_NAME = "DjangoCustomUserStarter"
 
@@ -72,10 +72,10 @@ class CustomUserSignUpViewTest(TestCase):
         response = self.client.post(
             SIGN_UP_VIEW_URL,
             {
-                "username": A_TEST_USERNAME,
-                "password1": A_TEST_PASSWORD,
-                "password2": A_TEST_PASSWORD,
-                "first_name": A_TEST_FIRST_NAME,
+                "username": TEST_USERNAME_ONE,
+                "password1": TEST_PASSWORD_ONE,
+                "password2": TEST_PASSWORD_ONE,
+                "first_name": TEST_FIRST_NAME_ONE,
             },
         )
         self.assertRedirects(response, CUSTOM_LOGIN_VIEW_URL)
@@ -98,9 +98,9 @@ class CustomUserSignUpViewTest(TestCase):
         self.assertEqual(response.context["the_site_name"], THE_SITE_NAME)
 
 
-class CustomLoginViewTest(TestCase):
+class CustomUserLoginViewTest(TestCase):
     """
-    Tests for `CustomLoginView`.
+    Tests for `CustomUserLoginView`.
     """
 
     def test_url_exists(self):
@@ -137,8 +137,8 @@ class CustomUserUpdateViewTest(TestCase):
         Create a test user and add it as an attribute of the `cls`.
         """
         cls.a_test_user = CustomUser.objects.create_user(
-            username=A_TEST_USERNAME,
-            password=A_TEST_PASSWORD,
+            username=TEST_USERNAME_ONE,
+            password=TEST_PASSWORD_ONE,
         )
 
     def test_url_redirects_non_authenticated_user(self):
@@ -194,8 +194,8 @@ class CustomUserUpdateViewTest(TestCase):
         User should not be able to edit another user's account.
         """
         another_test_user = CustomUser.objects.create_user(
-            username=ANOTHER_TEST_USERNAME,
-            password=ANOTHER_TEST_PASSWORD,
+            username=TEST_USERNAME_TWO,
+            password=TEST_PASSWORD_TWO,
         )
         self.client.force_login(another_test_user)
         response = self.client.get(
@@ -228,8 +228,8 @@ class CustomUserDetailViewTest(TestCase):
         Create a test user and add it as an attribute of the `cls`.
         """
         cls.a_test_user = CustomUser.objects.create_user(
-            username=A_TEST_USERNAME,
-            password=A_TEST_PASSWORD,
+            username=TEST_USERNAME_ONE,
+            password=TEST_PASSWORD_ONE,
         )
 
     def test_url_redirects_non_authenticated_user(self):
@@ -283,8 +283,8 @@ class CustomUserDetailViewTest(TestCase):
         User should not be able to view another user's account.
         """
         another_test_user = CustomUser.objects.create_user(
-            username=ANOTHER_TEST_USERNAME,
-            password=ANOTHER_TEST_PASSWORD,
+            username=TEST_USERNAME_TWO,
+            password=TEST_PASSWORD_TWO,
         )
         self.client.force_login(another_test_user)
         response = self.client.get(

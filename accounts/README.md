@@ -15,11 +15,11 @@
 
 ## We override the following `View`
 
-`accounts/login/` is mapped to `CustomLoginView` instead of `LoginView` provided by Django.
+`accounts/login/` is mapped to `CustomUserLoginView` instead of `LoginView` provided by Django.
 
 | URL             | View Name      | Our View Class    | Django View Class |
 | --------------- | -------------- | ----------------- | ----------------- |
-| accounts/login/ | [name='login'] | `CustomLoginView` | `LoginView`       |
+| accounts/login/ | [name='login'] | `CustomUserLoginView` | `LoginView`       |
 
 ## NOTE
 

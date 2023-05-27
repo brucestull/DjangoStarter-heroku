@@ -7,10 +7,10 @@ from accounts.models import CustomUser
 
 @admin.register(CustomUser)
 class CustomUserAdmin(UserAdmin):
+    model = CustomUser
     add_form = CustomUserCreationForm
     form = CustomUserChangeForm
-    model = CustomUser
     list_display = (
-        'username',
-        'email'
+        "username",
+        "is_staff",
     )
