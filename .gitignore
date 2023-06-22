@@ -1,3 +1,5 @@
+local_things*
+
 # Use '.git/info/exclude' to exclude user-specific files from git tracking in the current repo.
 # https://riptutorial.com/git/example/8049/ignore-files-locally-without-committing-ignore-rules
 

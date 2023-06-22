@@ -9,6 +9,6 @@ class CustomUser(AbstractUser):
 
     def __str__(self):
         """
-        String representation of CustomUser.
+        String representation of `CustomUser` is `username`.
         """
         return self.username
