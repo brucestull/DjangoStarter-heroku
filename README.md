@@ -52,4 +52,4 @@
 
 ## Links to this project's pages
 
-* [DjangoCustomUserStarter-heroku Repository](https://github.com/brucestull/DjangoCustomUserStarter-heroku)
+* [DjangoStarter-heroku Repository](https://github.com/brucestull/DjangoStarter-heroku)
