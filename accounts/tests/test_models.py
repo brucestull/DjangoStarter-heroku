@@ -4,8 +4,8 @@ from django.contrib.auth.models import AbstractUser
 from accounts.models import CustomUser
 
 TEST_USER_USERNAME = "CustomUser"
-TEST_USER_EMAIL = "CustomUser@email.app"
 TEST_USER_PASSWORD = "CustomUserPassword"
+TEST_USER_EMAIL = "CustomUser@email.app"
 
 class CustomUserModelTest(TestCase):
     """

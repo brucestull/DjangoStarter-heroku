@@ -53,6 +53,23 @@ class TestCustomUserAdmin(TestCase):
         custom_user_admin = CustomUserAdmin(CustomUser, None)
         self.assertEqual(custom_user_admin.model, CustomUser)
 
+    def test_list_display_has_correct_fields_as_tuple(self):
+        """
+        `CustomUserAdmin` `list_display` should be a tuple.
+        """
+        custom_user_admin = CustomUserAdmin(CustomUser, None)
+        self.assertIsInstance(custom_user_admin.list_display, tuple)
+        expected_tuple = (
+            "username",
+            "email",
+            "registration_accepted",
+            "is_staff",
+        )
+        self.assertEqual(custom_user_admin.list_display, expected_tuple)
+
+    # `CustomUserAdmin.list_display` is covered by `test_list_display_has_correct_fields_as_tuple`.
+    # But, we show another way to test the parts of `CustomUserAdmin.list_display`
+    # below.
     def test_list_display_includes_username(self):
         """
         `CustomUserAdmin` `list_display` should include `username`.
@@ -98,3 +115,19 @@ class TestCustomUserAdmin(TestCase):
         fieldsets = custom_user_admin.get_fieldsets(request=None, obj=None)
         fieldsets_as_list = list(fieldsets)
         self.assertIn("Moderator Permissions", fieldsets_as_list[1])
+
+    def test_get_fieldsets_moderator_permissions_tuple(self):
+        """
+        `CustomUserAdmin` `get_fieldsets()` method should return a list of tuples that includes `Moderator Permissions` as a tuple.
+        """
+        custom_user_admin = CustomUserAdmin(CustomUser, None)
+        expected_moderator_permissions_tuple = (
+            "Moderator Permissions",
+            {"fields": ("registration_accepted",)},
+        )
+        fieldsets = custom_user_admin.get_fieldsets(request=None, obj=None)
+        fieldsets_as_list = list(fieldsets)
+        self.assertEqual(
+            fieldsets_as_list[1],
+            expected_moderator_permissions_tuple,
+        )
