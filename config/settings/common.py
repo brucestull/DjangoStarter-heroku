@@ -135,3 +135,26 @@ EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
 EMAIL_FILE_PATH = BASE_DIR / "sent_emails"
 
 THE_SITE_NAME = "DjangoCustomUserStarter"
+
+# Settings determined by `ENVIRONMENT` value:
+if ENVIRONMENT == "production":
+    database_config_variables = get_database_config_variables(
+        os.environ.get("DATABASE_URL")
+    )
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": database_config_variables["DATABASE_NAME"],
+            "HOST": database_config_variables["DATABASE_HOST"],
+            "PORT": database_config_variables["DATABASE_PORT"],
+            "USER": database_config_variables["DATABASE_USER"],
+            "PASSWORD": database_config_variables["DATABASE_PASSWORD"],
+        }
+    }
+else:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
+        }
+    }
