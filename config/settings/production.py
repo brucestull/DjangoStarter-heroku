@@ -3,7 +3,7 @@ from config.settings.common import *
 import os
 
 
-ALLOWED_HOSTS = ["flynnt-knapp-djangostarter.herokuapp.com"]
+ALLOWED_HOSTS = ["django-starter-heroku-31869c6a140f.herokuapp.com"]
 
 
 MIDDLEWARE = MIDDLEWARE + ["whitenoise.middleware.WhiteNoiseMiddleware"]
