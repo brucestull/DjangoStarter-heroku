@@ -1,6 +1,7 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
+
 class CustomUser(AbstractUser):
     """
     A CustomUser class is added so we can add functionality later. It's
@@ -13,7 +14,6 @@ class CustomUser(AbstractUser):
         help_text="Designates whether this user's site registration has been accepted.",
         default=False,
     )
-
 
     def __str__(self):
         """
