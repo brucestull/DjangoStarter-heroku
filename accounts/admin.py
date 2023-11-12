@@ -10,6 +10,11 @@ class CustomUserAdmin(UserAdmin):
     add_form = CustomUserCreationForm
     form = CustomUserChangeForm
     model = CustomUser
+    list_filter = (
+        "registration_accepted",
+        "is_staff",
+        "is_superuser",
+    )
     list_display = (
         "username",
         "email",
