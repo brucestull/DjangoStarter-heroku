@@ -2,11 +2,7 @@ import os
 
 from config.settings.common import *  # noqa: F403, F401
 
-ALLOWED_HOSTS = ["django-starter-heroku-31869c6a140f.herokuapp.com"]
-
-
 MIDDLEWARE = MIDDLEWARE + ["whitenoise.middleware.WhiteNoiseMiddleware"]  # noqa: F405
-
 
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_ROOT = BASE_DIR / "staticfiles"  # noqa: F405

@@ -2,8 +2,6 @@ import os
 
 from config.settings.common import *  # noqa: F403, F401
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
