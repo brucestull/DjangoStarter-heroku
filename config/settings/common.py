@@ -150,6 +150,7 @@ if ENVIRONMENT == "production":
             "PASSWORD": database_config_variables["DATABASE_PASSWORD"],
         }
     }
+    STATIC_ROOT = BASE_DIR / "staticfiles"
 else:
     ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
     DATABASES = {
