@@ -1,16 +1,16 @@
 from django.test import TestCase
 from django.urls import reverse
 
+from accounts.forms import CustomUserCreationForm
 from accounts.models import CustomUser
-from accounts.forms import CustomUserCreationForm, CustomUserChangeForm
 
-TEST_USERNAME_ONE = 'OneUser'
-TEST_PASSWORD_ONE = 'one_test_password'
-TEST_FIRST_NAME_ONE = 'One'
+TEST_USERNAME_ONE = "OneUser"
+TEST_PASSWORD_ONE = "one_test_password"
+TEST_FIRST_NAME_ONE = "One"
 
-TEST_USERNAME_TWO = 'TwoUser'
-TEST_PASSWORD_TWO = 'two_test_password'
-TEST_FIRST_NAME_TWO = 'Two'
+TEST_USERNAME_TWO = "TwoUser"
+TEST_PASSWORD_TWO = "two_test_password"
+TEST_FIRST_NAME_TWO = "Two"
 
 THE_SITE_NAME = "DjangoCustomUserStarter"
 
@@ -204,7 +204,7 @@ class CustomUserUpdateViewTest(TestCase):
                 kwargs={"pk": self.a_test_user.pk},
             )
         )
-        self.assertEqual(response.status_code, 403)        
+        self.assertEqual(response.status_code, 403)
 
     def test_the_site_name_in_context(self):
         """
@@ -294,4 +294,3 @@ class CustomUserDetailViewTest(TestCase):
             )
         )
         self.assertEqual(response.status_code, 403)
-
