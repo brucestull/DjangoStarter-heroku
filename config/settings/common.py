@@ -134,9 +134,14 @@ EMAIL_FILE_PATH = BASE_DIR / "sent_emails"
 
 THE_SITE_NAME = "DjangoCustomUserStarter"
 
+# Quick-start development settings - unsuitable for production
+# See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
+
 # Settings determined by `ENVIRONMENT` value:
 if ENVIRONMENT == "production":
     ALLOWED_HOSTS = ["django-starter-heroku-31869c6a140f.herokuapp.com"]
+    # SECURITY WARNING: keep the secret key used in production secret!
+    SECRET_KEY = os.environ.get("SECRET_KEY")
     database_config_variables = get_database_config_variables(
         os.environ.get("DATABASE_URL")
     )
@@ -153,9 +158,23 @@ if ENVIRONMENT == "production":
     STATIC_ROOT = BASE_DIR / "staticfiles"
 else:
     ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
+    # SECURITY WARNING: keep the secret key used in production secret!
+    # A default `SECRET_KEY` value is used here so that the project can be run locally,
+    # in development, without having to set an environment variable.
+    SECRET_KEY = os.environ.get(
+        "SECRET_KEY",
+        "django-insecure-mm8cx0al6wo$$0hhv3&eevzsst9dbw&(5p$#9k(1rx%e@j+=$l",
+    )
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.sqlite3",
             "NAME": BASE_DIR / "db.sqlite3",
         }
     }
+
+# To create a new `SECRET_KEY`:
+"""
+    python manage.py shell
+    from django.core.management.utils import get_random_secret_key
+    print(get_random_secret_key())
+"""
