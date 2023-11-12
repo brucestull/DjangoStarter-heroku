@@ -67,8 +67,7 @@ class TestCustomUserAdmin(TestCase):
         )
         self.assertEqual(custom_user_admin.list_display, expected_tuple)
 
-    # `CustomUserAdmin.list_display` is covered by `test_list_display_has_correct_fields_as_tuple`.
-    # But, we show another way to test the parts of `CustomUserAdmin.list_display`
+    # Here, we show another way to test the parts of `CustomUserAdmin.list_display`
     # below.
     def test_list_display_includes_username(self):
         """
@@ -109,7 +108,8 @@ class TestCustomUserAdmin(TestCase):
 
     def test_get_fieldsets_has_moderator_permissions_in_second_element(self):
         """
-        `CustomUserAdmin` `get_fieldsets()` method should return a list of tuples that includes `Moderator Permissions`.
+        `CustomUserAdmin` `get_fieldsets()` method should return a list of tuples that
+        includes `Moderator Permissions`.
         """
         custom_user_admin = CustomUserAdmin(CustomUser, None)
         fieldsets = custom_user_admin.get_fieldsets(request=None, obj=None)
@@ -118,7 +118,8 @@ class TestCustomUserAdmin(TestCase):
 
     def test_get_fieldsets_moderator_permissions_tuple(self):
         """
-        `CustomUserAdmin` `get_fieldsets()` method should return a list of tuples that includes `Moderator Permissions` as a tuple.
+        `CustomUserAdmin` `get_fieldsets()` method should return a list of tuples that
+        includes `Moderator Permissions` as a tuple.
         """
         custom_user_admin = CustomUserAdmin(CustomUser, None)
         expected_moderator_permissions_tuple = (

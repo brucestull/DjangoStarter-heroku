@@ -1,6 +1,6 @@
-from config.settings.common import *
 import os
 
+from config.settings.common import *  # noqa: F403, F401
 
 ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
 
@@ -8,7 +8,8 @@ ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # Create your own `SECRET_KEY` here for use in Development.
-# This one is provided here for user to get the DjangoCustomUserStarter up and running quickly.
+# This one is provided here for user to get the DjangoCustomUserStarter up and running
+# quickly.
 # Ideally, you would not run with `SECRET_KEY` exposed in development either.
 # You can set a `SECRET_KEY` on you development computer system.
 # Create a specific `SECRET_KEY` for development and use it in development only.

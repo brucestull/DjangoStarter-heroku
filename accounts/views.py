@@ -13,22 +13,24 @@ class CustomUserSignUpView(CreateView):
     """
     View for user to create a new account.
     """
+
     form_class = CustomUserCreationForm
-    success_url = reverse_lazy('login')
-    template_name = 'registration/signup.html'
+    success_url = reverse_lazy("login")
+    template_name = "registration/signup.html"
 
     def get_context_data(self, **kwargs):
         """
         Get the parent `context` and add `the_site_name` to the it.
         """
         context = super().get_context_data(**kwargs)
-        context['the_site_name'] = THE_SITE_NAME
+        context["the_site_name"] = THE_SITE_NAME
         return context
 
 
 class CustomUserLoginView(LoginView):
     """
-    Override the default login view. This will allow us to add the site name to the context and then display it on the page.
+    Override the default login view. This will allow us to add the site name to the
+    context and then display it on the page.
     """
 
     def get_context_data(self, **kwargs):
@@ -36,7 +38,7 @@ class CustomUserLoginView(LoginView):
         Get the parent `context` and add `the_site_name` to the it.
         """
         context = super().get_context_data(**kwargs)
-        context['the_site_name'] = THE_SITE_NAME
+        context["the_site_name"] = THE_SITE_NAME
         return context
 
 
@@ -61,7 +63,7 @@ class CustomUserUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         Get the parent `context` and add `the_site_name` to the it.
         """
         context = super().get_context_data(**kwargs)
-        context['the_site_name'] = THE_SITE_NAME
+        context["the_site_name"] = THE_SITE_NAME
         return context
 
 
@@ -69,13 +71,15 @@ class CustomUserDetailView(LoginRequiredMixin, UserPassesTestMixin, DetailView):
     """
     View for user to view their account details.
 
-    We are only specifying the `model` here because we are using the default template name that is created by Django.
+    We are only specifying the `model` here because we are using the default template
+    name that is created by Django.
     """
+
     model = CustomUser
 
     def test_func(self):
         """
-        Only allow the user to view their own account details.
+        User is only allowedt to view their own account details.
         """
         return self.request.user == self.get_object()
 
@@ -85,5 +89,5 @@ class CustomUserDetailView(LoginRequiredMixin, UserPassesTestMixin, DetailView):
         """
         context = super().get_context_data(**kwargs)
         # context['the_site_name'] = THE_SITE_NAME
-        context['page_title'] = f"{self.object.username}'s User Information"
+        context["page_title"] = f"{self.object.username}'s User Information"
         return context

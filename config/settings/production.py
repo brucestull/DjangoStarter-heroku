@@ -1,16 +1,15 @@
-from config.settings.common import *
-
 import os
 
+from config.settings.common import *  # noqa: F403, F401
 
 ALLOWED_HOSTS = ["django-starter-heroku-31869c6a140f.herokuapp.com"]
 
 
-MIDDLEWARE = MIDDLEWARE + ["whitenoise.middleware.WhiteNoiseMiddleware"]
+MIDDLEWARE = MIDDLEWARE + ["whitenoise.middleware.WhiteNoiseMiddleware"]  # noqa: F405
 
 
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_ROOT = BASE_DIR / "staticfiles"
+STATIC_ROOT = BASE_DIR / "staticfiles"  # noqa: F405
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
