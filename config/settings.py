@@ -139,7 +139,7 @@ THE_SITE_NAME = "DjangoCustomUserStarter"
 
 # Settings determined by `ENVIRONMENT` value:
 if ENVIRONMENT == "production":
-    ALLOWED_HOSTS = ["django-starter-heroku-31869c6a140f.herokuapp.com"]
+    ALLOWED_HOSTS = [os.getenv("THIS_HOST")]
     # SECURITY WARNING: keep the secret key used in production secret!
     SECRET_KEY = os.environ.get("SECRET_KEY")
     MIDDLEWARE = MIDDLEWARE + ["whitenoise.middleware.WhiteNoiseMiddleware"]
