@@ -142,6 +142,7 @@ if ENVIRONMENT == "production":
     ALLOWED_HOSTS = ["django-starter-heroku-31869c6a140f.herokuapp.com"]
     # SECURITY WARNING: keep the secret key used in production secret!
     SECRET_KEY = os.environ.get("SECRET_KEY")
+    MIDDLEWARE = MIDDLEWARE + ["whitenoise.middleware.WhiteNoiseMiddleware"]
     database_config_variables = get_database_config_variables(
         os.environ.get("DATABASE_URL")
     )
