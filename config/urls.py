@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import include, path
 from django.views.generic.base import TemplateView
 
-from config.settings.common import THE_SITE_NAME
+from config.settings import THE_SITE_NAME
 
 urlpatterns = [
     path(
