@@ -136,6 +136,7 @@ THE_SITE_NAME = "DjangoCustomUserStarter"
 
 # Settings determined by `ENVIRONMENT` value:
 if ENVIRONMENT == "production":
+    ALLOWED_HOSTS = ["django-starter-heroku-31869c6a140f.herokuapp.com"]
     database_config_variables = get_database_config_variables(
         os.environ.get("DATABASE_URL")
     )
@@ -150,6 +151,7 @@ if ENVIRONMENT == "production":
         }
     }
 else:
+    ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.sqlite3",
