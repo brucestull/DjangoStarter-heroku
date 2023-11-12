@@ -1,7 +1,6 @@
-from config.settings.common import *
-
 import os
 
+from config.settings.common import *
 
 ALLOWED_HOSTS = ["django-starter-heroku-31869c6a140f.herokuapp.com"]
 
