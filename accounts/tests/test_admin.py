@@ -1,16 +1,8 @@
 from django.test import TestCase
 
-from accounts.models import CustomUser
 from accounts.admin import CustomUserAdmin
-from accounts.forms import (
-    CustomUserCreationForm,
-    CustomUserChangeForm,
-)
-
-
-TEST_USER_USERNAME = "TestUser"
-TEST_USER_PASSWORD = "TestUserPassword"
-TEST_USER_EMAIL = "TestUser@email.app"
+from accounts.forms import CustomUserChangeForm, CustomUserCreationForm
+from accounts.models import CustomUser
 
 
 class TestCustomUserAdmin(TestCase):
@@ -28,8 +20,8 @@ class TestCustomUserAdmin(TestCase):
         This specific function name `setUpTestData` is required by Django.
         """
         cls.user = CustomUser.objects.create_user(
-            username=TEST_USER_USERNAME,
-            password=TEST_USER_PASSWORD,
+            username="DezziKitten",
+            password="MeowMeow42",
         )
 
     def test_uses_correct_add_form(self):
