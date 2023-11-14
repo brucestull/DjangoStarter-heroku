@@ -1,11 +1,7 @@
-from django.test import TestCase
 from django.contrib.auth.models import AbstractUser
+from django.test import TestCase
 
 from accounts.models import CustomUser
-
-TEST_USER_USERNAME = "CustomUser"
-TEST_USER_PASSWORD = "CustomUserPassword"
-TEST_USER_EMAIL = "CustomUser@email.app"
 
 
 class CustomUserModelTest(TestCase):
@@ -21,9 +17,9 @@ class CustomUserModelTest(TestCase):
         This specific function name `setUpTestData` is required by Django.
         """
         cls.user = CustomUser.objects.create(
-            username=TEST_USER_USERNAME,
-            email=TEST_USER_EMAIL,
-            password=TEST_USER_PASSWORD,
+            username="DezziKitten",
+            email="DezziKitten@purr.scratch",
+            password="MeowMeow42",
         )
 
     def test_model_inherits_from_abstract_user(self):
@@ -65,12 +61,14 @@ class CustomUserModelTest(TestCase):
             CustomUser._meta.get_field("registration_accepted").default,
             expected_default,
         )
+        # Alternatively:
+        self.assertFalse(CustomUser._meta.get_field("registration_accepted").default)
 
     def test_dunder_string_method(self):
         """
         `CustomUser` model `__str__` method should return `CustomUser.username`.
         """
-        expected_dunder_string = TEST_USER_USERNAME
+        expected_dunder_string = "DezziKitten"
         self.assertEqual(
             str(self.user),
             expected_dunder_string,
