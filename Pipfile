@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 django = "==4.2.16"
 docutils = "==0.19"
-gunicorn = "==22.0.0"
+gunicorn = "==23.0.0"
 whitenoise = "==6.3.0"
 psycopg2-binary = "2.9.6"
 tzdata = "==2022.7"
