@@ -45,18 +45,19 @@
 
 ## Getting Started
 
-### 1. Fork the Repository
+### 1. Create a Repository from the Template
 
-1. Go to the upstream repo: https://github.com/brucestull/DjangoStarter-heroku  
-2. Click the **Fork** button in the top-right to create your own copy under your GitHub account.  
+1. Go to the template repo: https://github.com/brucestull/DjangoStarter-heroku  
+2. Click the **Use this template** button (next to “Clone or download”).  
+3. Under **Create a new repository**, select your GitHub account, give your repo a name (e.g. `DjangoStarter-heroku`), add an optional description, and choose Public or Private.  
+4. Click **Create repository from template**.
 
-Once it’s forked, clone your fork:
+Once your new repo is created, clone it locally:
 
 ```bash
 git clone https://github.com/<your-username>/DjangoStarter-heroku.git
 cd DjangoStarter-heroku
 ```
-
 
 ### 2. Install Dependencies
 
