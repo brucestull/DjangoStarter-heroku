@@ -53,3 +53,7 @@
 ## Links to this project's pages
 
 * [DjangoStarter-heroku Repository](https://github.com/brucestull/DjangoStarter-heroku)
+
+
+
+
