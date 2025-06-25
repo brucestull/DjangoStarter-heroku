@@ -193,4 +193,6 @@ Distributed under the [MIT License](LICENSE).
 * **DEV/PROD settings** guide from Thinkster:
   [https://thinkster.io/tutorials/configuring-django-settings-for-production](https://thinkster.io/tutorials/configuring-django-settings-for-production)
 
+* [DjangoStarter-heroku Repository](https://github.com/brucestull/DjangoStarter-heroku)
+
 **TODO:** Add any other libraries, resources, or individuals you wish to thank.
