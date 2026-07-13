@@ -6,7 +6,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 
 from accounts.forms import CustomUserCreationForm, CustomUserChangeForm
 from accounts.models import CustomUser
-from config.settings import THE_SITE_NAME
+from django.conf import settings
 
 
 class CustomUserSignUpView(CreateView):
@@ -23,7 +23,7 @@ class CustomUserSignUpView(CreateView):
         Get the parent `context` and add `the_site_name` to the it.
         """
         context = super().get_context_data(**kwargs)
-        context["the_site_name"] = THE_SITE_NAME
+        context["the_site_name"] = settings.THE_SITE_NAME
         return context
 
 
@@ -38,7 +38,7 @@ class CustomUserLoginView(LoginView):
         Get the parent `context` and add `the_site_name` to the it.
         """
         context = super().get_context_data(**kwargs)
-        context["the_site_name"] = THE_SITE_NAME
+        context["the_site_name"] = settings.THE_SITE_NAME
         return context
 
 
@@ -63,7 +63,7 @@ class CustomUserUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         Get the parent `context` and add `the_site_name` to the it.
         """
         context = super().get_context_data(**kwargs)
-        context["the_site_name"] = THE_SITE_NAME
+        context["the_site_name"] = settings.THE_SITE_NAME
         return context
 
 
@@ -88,6 +88,6 @@ class CustomUserDetailView(LoginRequiredMixin, UserPassesTestMixin, DetailView):
         Get the parent `context` and add `the_site_name` and/or `page_title` to the it.
         """
         context = super().get_context_data(**kwargs)
-        # context['the_site_name'] = THE_SITE_NAME
+        # context['the_site_name'] = settings.THE_SITE_NAME
         context["page_title"] = f"{self.object.username}'s User Information"
         return context
