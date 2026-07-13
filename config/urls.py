@@ -18,14 +18,14 @@ from django.contrib import admin
 from django.urls import include, path
 from django.views.generic.base import TemplateView
 
-from config.settings import THE_SITE_NAME
+from django.conf import settings
 
 urlpatterns = [
     path(
         "",
         TemplateView.as_view(
             template_name="home.html",
-            extra_context={"the_site_name": THE_SITE_NAME},
+            extra_context={"the_site_name": settings.THE_SITE_NAME},
         ),
         name="home",
     ),
